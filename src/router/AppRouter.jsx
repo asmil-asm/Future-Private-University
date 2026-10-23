@@ -92,7 +92,10 @@ const AppRouter = () => {
       ],
       
     },
-    {}
+      {
+        path: '*',
+        element: <Error />,
+    }
   ]);
 
   return <RouterProvider router={router} />;

@@ -13,7 +13,7 @@ const UniversityChatbot = () => {
   const isAr = i18n.language === 'ar';
 
   const styles = {
-    container: `fixed bottom-5 ${isAr ? 'right-5' : 'left-5'} z-[1000]`,
+    container: `fixed bottom-12 ${isAr ? 'right-3' : 'left-3'} z-[1000]`,
     toggleButton: "bg-[var(--color-hover-text)] text-white border-none rounded-full w-14 h-14 text-2xl cursor-pointer shadow-lg flex items-center justify-center transition-all active:scale-95",
     chatWrapper: "mt-2.5 w-[350px] rounded-xl overflow-hidden shadow-2xl"
   };
