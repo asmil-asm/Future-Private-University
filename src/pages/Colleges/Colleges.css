@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+.college {
+  @apply bg-gray-50 py-14 px-4 sm:px-6 lg:px-8;
+}
+
+.college-header {
+  @apply text-center max-w-2xl mx-auto mb-10 sm:mb-14;
+}
+
+.college-header h2 {
+  @apply relative inline-block pb-4 mb-4
+         text-2xl sm:text-3xl lg:text-4xl
+         font-bold text-[var(--color-light-main)];
+}
+
+.college-header h2::after {
+  content: "";
+  @apply absolute bottom-0 left-1/2 -translate-x-1/2
+         w-16 sm:w-20 h-1 rounded-full bg-[var(--color-light-main)];
+  
+}
+
+.college-header .college-into {
+  @apply text-gray-600 text-base sm:text-lg leading-relaxed;
+}
+
+.college-gride {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+         gap-5 sm:gap-6 max-w-6xl mx-auto;
+}
+
+.college-gride > a {
+  @apply flex h-full;
+}
+
+.college-card {
+  @apply relative flex flex-col items-center justify-center gap-4
+         w-full h-full p-6 sm:p-8
+         bg-white border border-slate-200 rounded-2xl
+         shadow-sm overflow-hidden cursor-pointer
+         transition-all duration-300 ease-out
+         hover:-translate-y-1.5 hover:shadow-xl
+         hover:border-[var(--color-light-main)]/30;
+}
+
+.college-card::before {
+  content: "";
+  @apply absolute top-0 left-0 right-0 h-1 origin-left scale-x-0
+         transition-transform duration-300 bg-[var(--color-light-main)];
+}
+
+.college-card:hover::before {
+  @apply scale-x-100;
+}
+
+.college-icon {
+  @apply flex items-center justify-center
+         w-20 h-20 sm:w-24 sm:h-24
+         rounded-full
+         text-4xl sm:text-5xl
+         text-[var(--color-light-main)] bg-[#182F5A]/5
+         transition-all duration-300;
+}
+
+.college-card:hover .college-icon {
+  @apply bg-[var(--color-light-main)] text-white -translate-y-0.5;
+}
+
+.college-card h3 {
+  @apply text-base sm:text-lg font-semibold text-center leading-snug
+         text-slate-800 transition-colors duration-300;
+}
+
+.college-card:hover h3 {
+  @apply text-[var(--color-light-main)];
+}
+
+.college-title {
+  @apply text-sm sm:text-[15px] text-gray-500 text-center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .college-card,
+  .college-card::before,
+  .college-icon,
+  .college-card h3 {
+    transition: none !important;
+  }
+}

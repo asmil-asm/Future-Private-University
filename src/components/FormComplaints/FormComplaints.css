@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.form-suggestions{
+    @apply w-full max-w-2xl mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-lg;
+}
+.form-group{
+     @apply mb-5;
+}
+.form-label{
+     @apply block mb-2 text-sm font-medium text-[#182F5A];
+}
+.form-input{
+       @apply w-full px-4 py-3 border border-gray-300 rounded-lg mt-3 mb-3
+           focus:outline-none  focus:border-[#182F5A]
+           transition duration-200;
+}
+.form-textarea{
+       @apply w-full px-4 py-3 border border-gray-300 rounded-lg
+           focus:outline-none  focus:border-[#182F5A]
+           resize-none min-h-[140px]
+           transition duration-200;
+}
+
+
+
+.send-btn{
+    @apply w-full md:w-auto px-6 py-3 bg-[#182F5A] text-white font-medium mt-4
+           rounded-lg hover:bg-[#ffc600]
+           transition duration-200;
+        }

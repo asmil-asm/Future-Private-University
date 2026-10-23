@@ -1,0 +1,590 @@
+{
+  "need_help": "Need Help? Call Us",
+  "contact_us": "Contact Us",
+
+    "about_us": "About Us",
+
+
+    "location": "Dar'a, Syria",
+  "opening_hours": "Opening Hours: Saturday to Tuesday - 8 AM to 4 PM",
+
+  "slider_title_1": "Future Private University",
+  "slider_desc_1": "At Future Private University, we believe every student has a unique fingerprint, which is why we offer academic and advisory support to help you discover your true potential.",
+
+  "slider_title_2": "Choose the right educational path for your future",
+  "slider_desc_2": "Future Private University provides an integrated academic environment where students blend theory with practice in fields that keep pace with the job market.",
+
+  "slider_title_3": "Education that goes beyond the classroom",
+  "slider_desc_3": "Future Private University encourages students to participate in research projects and extracurricular activities that develop their leadership and innovation skills.",
+
+
+
+  "nav_home": "Home",
+
+  "nav_university": "University",
+  "nav_about_university": "About the University",
+  "nav_vision_mission": "Vision and Mission",
+  "nav_university_council": "University Council",
+  "nav_board_trustees": "Board of Trustees",
+
+  "nav_academics": "Academics",
+  "nav_colleges": "Colleges",
+  "nav_departments": "Departments",
+  "nav_programs": "Programs",
+  "nav_staff": "Staff",
+
+  "nav_news": "News",
+  "nav_articles": "Articles",
+  "nav_events": "Events",
+
+  "nav_careers": "Careers",
+  "nav_job_posting": "Job Posting",
+  "nav_job_applications": "Job Applications",
+
+  "nav_admission": "Admission",
+  "nav_students-services": "Student services",
+  "nav_application_info": "Application Information",
+
+  "nav_services": "Services",
+  "nav_services_list": "Services",
+  "nav_library": "Library",
+
+  "search_found": "Page found.",
+  "search_redirect": "Redirecting...",
+  "search_not_found": "No matching results found.",
+
+"faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Browse through our most frequent questions for quick answers",
+    "search_placeholder": "Search for your question here...",
+    "clear_btn": "Clear",
+    "no_results": "No results match your current search 🔎",
+    "no_results_sub": "Try using different keywords",
+    "cta_title": "Didn't find what you were looking for?",
+    "cta_desc": "Our academic support team is ready to help you directly at any time",
+    "cta_btn": "Contact Technical Support",
+    "seo_suffix": "University FAQs",
+    "seo_title_default": "FAQs & Academic Inquiries | Student Portal",
+    "seo_desc_default": "Instant and comprehensive answers to the most common questions regarding admission, registration, university housing, and student services.",
+    "seo_keywords": "FAQs, admission and registration, university housing, course registration, academic support",
+    "items": [
+      { "q": "How do I apply for admission?", "a": "Through the electronic admission portal by filling out the official registration form within the specified deadlines." },
+      { "q": "How do I register for courses?", "a": "By logging into the academic student portal and selecting the available course sections." },
+      { "q": "Is university housing available?", "a": "Yes, the university provides fully equipped housing for both male and female students according to approved regulations." },
+      { "q": "What are the external transfer requirements?", "a": "Transferring requires the cumulative GPA to be above the specified limit, approval from the respective department, and seat availability." }
+    ]
+  },"support": {
+    "title": "Technical Support",
+    "subtitle": "Facing a technical or academic issue? Submit the details and our support team will respond as soon as possible.",
+    "name_label": "Full Name",
+    "name_placeholder": "Enter your full name...",
+    "email_label": "Email Address",
+    "email_placeholder": "example@domain.com",
+    "message_label": "Issue Details or Inquiry",
+    "message_placeholder": "Write your message or explain the problem you are facing in detail...",
+    "submit_btn": "Submit Ticket",
+        "submit_btn_loding":"Sending ...",
+
+    "seo_title": "Technical Support & Helpdesk | University Portal",
+    "seo_desc": "Contact the technical support team to resolve technical and academic issues, submit inquiries, and get assistance for students and faculty members.",
+    "seo_keywords": "technical support, academic helpdesk, solve problems, support tickets, contact us",
+    "subject_label": "Subject",
+    "subject_placeholder": "Enter the subject of your message"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "At the university, we are committed to protecting your personal data, ensuring its confidentiality, and explaining how it is handled across our digital platforms.",
+    "seo_title": "Privacy Policy & Data Confidentiality | University Portal",
+    "seo_desc": "Read the university privacy policy to learn about how student and user data is collected, utilized, and protected according to advanced security standards.",
+    "seo_keywords": "privacy policy, data confidentiality, data protection, student data, information security",
+    "items": [
+      { "t": "Data Collection", "d": "We collect necessary student data to provide educational services and improve academic performance." },
+      { "t": "Data Usage", "d": "The collected data is used strictly for educational and administrative purposes within the university, and is never shared with unauthorized external parties." },
+      { "t": "Data Security", "d": "We implement advanced protection systems and certified encryption protocols to guarantee the security of your information and prevent unauthorized access." }
+    ]
+  },
+  "policies": {
+    "title": "University Policies & Regulations",
+    "subtitle": "The guide to academic and behavioral rules that govern campus life, ensuring a fair and respectful learning environment for all.",
+    "seo_title": "Academic Policies & Regulations | University Portal",
+    "seo_desc": "Review the official university policies and regulations, including student conduct codes, academic integrity guidelines, anti-plagiarism rules, and attendance policies.",
+    "seo_keywords": "university regulations, conduct codes, academic integrity, anti-plagiarism, attendance policy",
+    "rules": [
+      "Commitment to proper campus conduct",
+      "Strict prohibition of cheating and plagiarism",
+      "Adherence to attendance and punctuality regulations",
+      "Respect for faculty members and fellow peers"
+    ]
+  },
+ "documentation": {
+    "title": "Documentation & Guides Center",
+    "subtitle": "Official manuals and comprehensive documents explaining registration steps, job applications, and student services.",
+    "view_link": "View Guide Center",
+    "seo_title": "Admissions, Careers & Student Manuals | University Portal",
+    "seo_desc": "Explore official university manuals: academic admission and registration steps, the comprehensive student handbook, and career application guidelines for faculty and staff positions.",
+    "seo_keywords": "admissions and registration, student handbook, apply for jobs, university careers, admission requirements, student services",
+    "items": [
+      { "icon": "📝", "t": "Admissions & Registration Guide", "d": "A detailed walkthrough of creating a new account, uploading required documents, and selecting programs via the e-admission portal.", "link" :"/application" },
+      { "icon": "🎓", "t": "Student Handbook", "d": "The comprehensive reference guide for student rights, responsibilities, services, campus activities, and facility locations.",  "link" :"/admission/students"  },
+      { "icon": "💼", "t": "Careers & Employment Manual", "d": "Guidelines for applying to available academic and administrative job openings, attaching resumes, and passing interviews.", "link": "/careers/job-posting" }
+    ]
+  },
+  
+  "footer_description": "Future University opens its doors to ambitious minds worldwide. We foster innovation, critical thinking, and global citizenship. Whether beginning or advancing your academic journey, you will find a supportive community dedicated to excellence.",
+
+  "footer_home": "Home",
+  "footer_university": "University",
+  "footer_colleges": "Colleges",
+  "footer_staff": "Staff",
+  "footer_events": "Events",
+
+  "footer_programs": "Programs",
+  "footer_articles": "Articles",
+  "footer_students_services": "Students Services",
+  "footer_services": "Services",
+  "footer_contact": "Contact",
+
+  "footer_faqs": "FAQs",
+  "footer_privacy": "Privacy",
+  "footer_policy": "Policy",
+  "footer_support": "Support",
+  "footer_documentation": "Documentation",
+
+  "footer_contact_us": "Contact Us",
+  "footer_location": "Dar'a, Syria",
+
+  "footer_copyright": "All Rights Reserved Future 2026",
+  
+  "form_sender_name": "Sender Name",
+  "form_name_placeholder": "Name",
+
+  "form_email": "Email",
+  "form_email_placeholder": "Email",
+
+  "form_subject": "Subject",
+  "form_subject_placeholder": "Subject",
+
+  "form_message": "Message",
+  "form_message_placeholder": "Write your message here",
+
+  "form_send": "Send",
+
+"complaint_title": "Submit a suggestion or complaint to play a part in our development.",
+
+  "best_platform_title": "Discover your academic journey.",
+
+    "browse_more": "Browse More",
+  "latest_news": "Latest News",
+  "latest_news_desc": "Stay up to date with the latest news and activities.",
+
+    "latest_articles": "Latest Articles",
+  "latest_articles_desc": "Stay up to date with the latest Articles.",
+
+    "search_keyword": "Search by keyword",
+
+      "stats_students": "Students",
+  "stats_books": "Books",
+  "stats_majors": "Majors",
+
+  
+  "common_questions": "Common Questions",
+
+  "faq_q1": "What are the university registration requirements?",
+  "faq_a1": "You must hold a baccalaureate diploma and have a grade point average suitable for the specific college.",
+
+  "faq_q2": "Is there any public transport?",
+  "faq_a2": "Yes, there is transportation to and from the university.",
+
+  "faq_q3": "Is Future Private University recognized?",
+  "faq_a3": "Yes, the university is officially licensed by a legislative decree from the Syrian Arab Republic, and all its degrees are fully recognized by the Syrian Ministry of Higher Education; they qualify graduates to register with professional syndicates and pursue postgraduate studies both within and outside Syria.",
+
+  "faq_q4": "Does the university accept non-Syrian or older secondary school certificates?",
+  "faq_a4": "Yes, the university accepts non-Syrian certificates (whether Arab or foreign), provided they are attested and their equivalence is certified by the Ministry of Education and the Syrian Ministry of Foreign Affairs.",
+
+  "faq_q5": "Does the university offer scholarships or discounts?",
+  "faq_a5": "Yes, an annual free ministerial scholarship is offered to high-achieving students, in addition to special discounts for siblings and for students who excel academically on a semester basis.",
+
+
+  "dean_pharmacy_title": "Dr. Bashar Al-Azzam Dean of the Faculty of Pharmacy at Al-Jazira Private University",
+
+  "dean_pharmacy_message": "Dear visitors and esteemed students of the Faculty of Pharmacy at Al-Jazira Private University, We extend a warm welcome to you to the Faculty of Pharmacy’s website. We wish to assure you that we are constantly striving to do our utmost to support you and to create opportunities for your success and advancement. Fully recognizing the significant responsibility the Faculty of Pharmacy bears in preparing highly competent and experienced pharmacists—and in enabling them to play an active role in society—I consider it a great honor to shoulder this noble responsibility as Dean of the Faculty of Pharmacy at our beloved university. The College strives to realize its vision, mission, and objectives—derived from those of the University—which are subject to continuous updating and periodic evaluation in line with the requirements of each stage. In doing so, it adopts a philosophy grounded in a set of core values, foremost among them the advancement of knowledge, the cultivation of ethics and academic integrity, a commitment to development and modernization, teamwork, and the encouragement of scientific research, self-learning, and lifelong learning—all aimed at fostering an academic environment that nurtures creativity and innovation. The Faculty of Pharmacy strives to provide the necessary support for the continuous improvement of educational performance quality, aiming to achieve excellence in student preparation and scientific research, and to secure local and international program accreditation. In conclusion, I would like to extend my gratitude to the university administration—represented by the University President—as well as to the faculty members of the Faculty of Pharmacy and the committee formed from among them to develop this strategic plan.",
+
+  
+  "dean_it_title": "Dr. Firas Nayef Al-Zein",
+
+  "dean_it_message": "As it marks the end of its fifth year, the College of Information Technology at Al-Jazira Private University has grown into a flourishing tree, surrounded by students of science and guided by distinguished professors and educators. We live in a rapidly evolving and fast-growing world that has achieved technological advancements beyond imagination, transforming the globe into a closely connected village. This remarkable progress is the product of the human mind, which God has endowed with extraordinary abilities surpassing even the most sophisticated technologies. The true wealth of nations lies in their distinguished individuals who use their intellect to harness the forces of nature and utilize the resources bestowed upon the earth to build a better future and advance society in all aspects of life. The College is committed to its students because it believes they represent this true national wealth. It strives to cultivate knowledgeable and innovative minds capable of contributing to development and progress across all fields. Faculty members, lecturers, teaching assistants, technicians, and administrative staff work together to support and guide this promising generation, equipping them with the knowledge and skills necessary to become productive members of society. It gives me great pleasure to congratulate our students on joining this prestigious academic institution, and I encourage them to make knowledge, learning, integrity, and dedication a lifelong path in serving their communities and their nation.",
+
+  
+  "dean_architecture_title": "Dr. Samir Salloum",
+
+  "dean_architecture_message": "Dear students, I would like to welcome you to the college you have chosen as your future academic and professional path. I also welcome you to the field of architecture, which will become the foundation of your future career. I am pleased to work alongside my colleagues to help you develop into architects who possess both the theoretical knowledge and creative imagination necessary to excel in this profession. The College strives to provide an environment that encourages scientific thinking and creative work within advanced academic frameworks, enabling you to transform innovative ideas into distinctive architectural achievements and practical solutions that meet the needs of society and sustainable development. The University also seeks to strengthen cooperation and exchange programs with many partner universities, allowing you to engage with diverse architectural cultures and experiences. I wish you every success in your academic journey and assure you that my colleagues and I, together with the academic and administrative staff, will always support you and help you overcome any challenges you may encounter.",
+
+  
+  "dean_business_title": "Dean of the College of Business Administration, Dr. Abdul Rahman Marai",
+
+  "dean_business_message": "Business Administration is one of the most important disciplines, aiming to achieve qualitative development in economic, educational, and industrial institutions. Therefore, the College of Business Administration plays a vital role in preparing a generation of students who are fully aware of the responsibilities and challenges they will face in their future careers. The College seeks to develop creative graduates with strong intellectual and professional awareness by providing opportunities to acquire scientific and practical knowledge and skills through the latest developments in management sciences, both theoretical and applied. It also focuses on preparing students academically and professionally to compete successfully in the labor market or pursue postgraduate studies alongside graduates from other universities. In addition, the College is committed to developing students’ research and innovation capabilities through participation in research seminars, training programs in economic and social institutions, and the preparation of graduation projects that meet recognized standards of scientific research in both theoretical and practical aspects.",
+
+
+  "dean_civil_title": "Head of Civil Engineering Department Dr. Fawaz Masouti",
+
+  "dean_civil_message": "My dear students in the Civil Engineering Department, I commend you on your choice of the esteemed profession of engineering, and I wish you a fruitful and successful academic journey at the Faculty of Civil Engineering, filled with achievement and memorable experiences. Civil engineering is the oldest and broadest of the engineering disciplines, playing a vital role in urban, social, cultural, scientific, and economic development throughout the world. The impact of civil engineers is evident in all development plans and engineering projects that contribute to building and advancing societies. In response to the rapid developments taking place around the globe, the Civil Engineering Department at Al Jazeera Private University offers a distinguished academic program designed to prepare qualified civil engineers capable of undertaking diverse engineering responsibilities and contributing to the planning and implementation of society’s development needs. The curriculum covers a wide range of civil engineering fields, including structural engineering, transportation and highway engineering, geotechnical engineering, environmental and sanitary engineering, hydraulic structures, and engineering management. Teaching and research are carried out by highly qualified academics and researchers with extensive scientific and practical expertise, whose mission is to equip students with the skills needed to research, apply knowledge effectively, think critically, and pursue lifelong learning throughout their professional careers. Finally, I wish you a bright future in which you contribute to the advancement of your nation. You are the heirs of great civilizations that combined knowledge and values, illuminated the path of humanity, and continue to contribute to the progress of society and the world.",
+
+  
+  "colleges_title": "Colleges",
+  "colleges_description": "Explore the university's colleges and select a college to learn more about its academic programs and faculty members.",
+
+
+  "architecture_goal_1": "Graduating creative and qualified architects.",
+  "architecture_goal_2": "Fostering design and creative thinking in architecture.",
+  "architecture_goal_3": "Developing sustainable urban projects.",
+  "architecture_goal_4": "Integrating modern technology into architectural design.",
+
+
+  "dean_message_button": "Message from the Dean",
+
+  "architecture_department_title": "Department of Architectural Engineering at Al-Jazeera Private University",
+
+
+    "back_button": "Back",
+
+      "business_goal_1": "Qualifying administrative personnel capable of leading institutions.",
+  "business_goal_2": "Developing analysis and decision-making skills.",
+  "business_goal_3": "Fostering innovation in the business environment.",
+  "business_goal_4": "Linking the academic aspect to the labor market.",
+
+    "business_department_title": "Department of Business Administration at Al-Jazeera Private University",
+
+      "civil_goal_1": "Graduating civil engineers who are qualified both academically and practically.",
+  "civil_goal_2": "Enhancing scientific research in the fields of civil engineering.",
+  "civil_goal_3": "Developing sustainable infrastructure projects.",
+  "civil_goal_4": "Applying the latest engineering technologies in civil projects.",
+
+    "civil_department_title": "Department of Civil Engineering at Al-Jazeera Private University",
+
+      "informatics_goal_1": "Developing advanced educational programs in Informatics Engineering.",
+  "informatics_goal_2": "Preparing graduates capable of innovation and scientific research.",
+  "informatics_goal_3": "Strengthening cooperation with industry and research institutions.",
+  "informatics_goal_4": "Raising awareness in society about modern technologies and their applications.",
+
+  "informatics_slogan": "Informatics is the future—a bridge to all things useful.",
+
+    "pharmacy_goal_1": "Preparing pharmacists who are scientifically and practically qualified.",
+  "pharmacy_goal_2": "Advancing scientific research in the pharmaceutical field.",
+  "pharmacy_goal_3": "Improving pharmaceutical healthcare in the community.",
+  "pharmacy_goal_4": "Fostering innovation in the pharmaceutical industry.",
+
+  "pharmacy_vision": "The College of Pharmacy aspires to achieve academic excellence in the fields of pharmacy sciences and related medical sciences.",
+
+
+  "faculty_members": "Faculty Members",
+
+    "pharmacy_lecturer": "Lecturer at the Faculty of Pharmacy",
+  "pharmacy_professor": "Professor at the Faculty of Pharmacy",
+
+    "assistant_professor": "Assistant Professor",
+  "teacher": "Teacher",
+  "informatics_lecturer": "Lecturer at the Faculty of Informatics Engineering",
+
+    "civil_lecturer": "Lecturer at the Faculty of Civil Engineering",
+  "professor": "Professor",
+
+    "library_title": "Explore & Download Books For Free",
+  "library_subtitle": "JPU ONLINE E-LIBRARY",
+
+  "all_departments": "All Departments",
+  "informatics_engineering": "Informatics Engineering",
+  "pharmacy": "Pharmacy",
+  "civil_engineering": "Civil Engineering",
+  "research": "Research",
+  "architectural_engineering": "Architectural Engineering",
+  "business_administration": "Business Administration",
+
+  "books": "Books",
+
+  "university_name": "Future Private University",
+
+  "medical_service_description": "The University provides students with a medical clinic under the supervision of a full-time doctor, equipped with ambulances when necessary. The University also provides comprehensive health insurance for all new students through the service fees paid during enrollment.",
+  "university_activities_description": "The University is keen to strengthen its connection with the community through targeted social activities held each semester. It also organizes seminars and cultural and scientific competitions to enhance students' academic and cultural excellence. The university administration promotes sports activities by enabling students to participate in various competitions held among Syrian universities. In the past academic year, the University organized many events across different fields, with frequent and remarkable weekly activities. These include national, cultural, and social events.",
+  "student_accommodation_description": "The University contributes to providing accommodation for students who wish to benefit from this service at an affordable price and under the supervision of the university.",
+  "electronic_services_description": "The University offers a variety of electronic services that enable students to access information and complete important academic and administrative procedures during their studies electronically. These include the Student Portal, which provides access to all academic and financial information, as well as viewing test results and final exam results online. The University also provides an electronic registration service, allowing students to register their courses at the beginning of each semester from any place without needing to come to the university, in addition to an electronic payment service offered to students.",
+  
+  "students_page_title": "Students",
+  "student_handbook": "Student Handbook",
+  "student_services": "Student Services",
+  "exam_instructions": "Examination Instructions",
+
+  "exam_instructions_title": "Examination Instructions",
+  "exam_instructions_intro": "All students must strictly follow the instructions below during exams. Any violation may result in academic consequences.",
+
+  "exam_rule_1": "Students are not allowed to enter the exam room after the distribution of papers.",
+  "exam_rule_2": "Students must bring their university ID or personal identification.",
+  "exam_rule_3": "Mobile phones or any electronic devices are strictly prohibited inside the exam room.",
+  "exam_rule_4": "Students must maintain silence and avoid communication with others during the exam.",
+  "exam_rule_5": "Bringing any unauthorized books, papers, or reference materials is not allowed.",
+  "exam_rule_6": "Cheating or attempting to cheat will result in strict disciplinary actions.",
+  "exam_rule_7": "Students must submit their answer sheets before leaving the exam room; removing them is prohibited.",
+  "exam_rule_8": "Invigilators have the right to remove any student causing disturbance or breaking the rules.",
+  "exam_rule_9": "Ensure that the full name and university ID are correctly written on the answer sheet.",
+
+  "back_to_students": "Back to Students Page",
+
+    "student_guide_title": "Student Handbook",
+  "student_guide_intro": "This handbook contains all instructions and regulations for students, including policies on attendance, absence, academic commitment, and assessment methods.",
+
+  "student_guide_rule_1": "Attendance at lectures is mandatory.",
+  "student_guide_rule_2": "Being late for exams is not allowed.",
+  "student_guide_rule_3": "University regulations must be respected.",
+  "student_guide_rule_4": "Respect for administrative and teaching staff is required.",
+  "student_guide_rule_5": "Using mobile phones during lectures is not allowed without permission.",
+
+    "student_services_title": "Student Services",
+  "student_services_intro": "The university offers a range of electronic services designed to streamline student procedures and provide effective, prompt academic and administrative support.",
+  "student_services_subtitle": "Key services available:",
+
+  "student_service_1_title": "University Housing:",
+  "student_service_1_desc": "Suitable accommodation is provided for students with continuous supervision to ensure comfort and safety.",
+
+  "student_service_2_title": "Electronic Services:",
+  "student_service_2_desc": "Includes course registration, document issuance, and grade tracking through the online system.",
+
+  "student_service_3_title": "Academic Advising:",
+  "student_service_3_desc": "Helps students choose courses and academic plans that fit their study path.",
+
+  "student_service_4_title": "Student Support:",
+  "student_service_4_desc": "Provides academic and psychological support for students who need assistance.",
+
+   "job_description_title": "Description",
+  "job_requirements_title": "Requirements",
+
+  "about_us_description": "Al-Jazira Private University is committed to achieving educational and academic excellence, fostering a culture of distinction across its curricula, faculty, and student body. We constantly strive to develop competencies and provide an interactive learning environment that meets the aspirations of the younger generation. Through partnerships and twinning arrangements with peer universities, we continuously update our academic programs to align with global standards and actual labor market demands, while placing a strong emphasis on the quality of our graduates and on scientific research.",
+
+  "about_university_title": "About The University",
+  "vision_mission_title": "Vision and Mission",
+
+  "university_council_title": "University Council",
+  "council_name_1": "Dr. Osama Naif Al-Farraj",
+  "council_title_1": "President of Al Jazeera Private University",
+  "council_name_2": "Dr. Engineer. Mirna Suood",
+  "council_title_2": "Dean of the College of Engineering",
+  "council_name_3": "DR.Loda Rasheed Ali",
+  "council_title_3": "Head of the Information Engineering Department",
+  "council_name_4": "Professor Mustafa Ajamoghli",
+  "council_title_4": "University Secretary",
+  "council_name_5": "Dr. Engineer Asaad Maatouq",
+  "council_title_5": "Head of the Department of Architecture",
+  "council_name_6": "giath Doun",
+  "council_title_6": "Head of the Civil Engineering Department",
+  "council_name_7": "Dr.Jehad Salem Harbali",
+  "council_title_7": "Dean of the Faculty of Pharmacy",
+  "council_name_8": "Dr.Ayman Dayoub",
+  "council_title_8": "Dean of the College of Business Administration",
+
+  "board_trustees_title": "Board Of Trustees",
+  "trustee_name_1": "Dr. Mohammad Yahia Moualla",
+  "trustee_title_1": "President of the Security Council",
+  "trustee_name_2": "DR. Ayman Ksibe",
+  "trustee_title_2": "Member of the Board of Trustees",
+  "trustee_name_3": "Dr. Issam Haida",
+  "trustee_title_3": "Member of the Board of Trustees",
+  "trustee_name_4": "Dr. Mohammad Enad Solyman",
+  "trustee_title_4": "Member of the Board of Trustees",
+  "trustee_name_5": "Dr. Hassan Akel",
+  "trustee_title_5": "Member of the Board of Trustees",
+
+  "loading": "Loading...",
+  "department_of": "Department of",
+  "at_university": "at Al-Jazeera Private University",
+  "college_description": "College Description",
+  "dean": "Dean",
+  "message_from_dean": "Message from the Dean",
+  "college_objectives": "College Objectives",
+  "goal_1": "Preparing pharmacists who are scientifically and practically qualified.",
+  "goal_2": "Advancing scientific research in the pharmaceutical field.",
+  "goal_3": "Improving pharmaceutical healthcare in the community.",
+  "goal_4": "Fostering innovation in the pharmaceutical industry.",
+  "back": "Back",
+  "nav_advertisements":"Advertisements",
+  "form_sending": "Sending...",
+    "form_required_fields": "Please fill in the required fields",
+  "form_success": "Your message has been sent successfully!",
+  "form_failed": "Failed to send the message. Please try again later.",
+    "student_handbook_description": "This handbook contains all instructions and regulations for students, including policies on attendance, absence, academic commitment, and assessment mechanisms.",
+
+    
+  "student_services_description": "The university offers a range of electronic services designed to streamline student procedures and provide effective, prompt academic and administrative support.",
+  "key_services_available": "Key Services Available:",
+  "service_housing_title": "University Housing:",
+  "service_housing_desc": "Suitable accommodation is provided for students with continuous supervision to ensure comfort and safety.",
+  "service_electronic_title": "Electronic Services:",
+  "service_electronic_desc": "Includes course registration, document issuance, and grade tracking through the online system.",
+  "service_advising_title": "Academic Advising:",
+  "service_advising_desc": "Helps students choose courses and academic plans that fit their study path.",
+  "service_support_title": "Student Support:",
+  "service_support_desc": "Provides academic and psychological support for students who need assistance.",
+    "students_services": "Student Services",
+
+      "services": "Services",
+  "university_activities": "University Services",
+
+    "show_more": "Show more",
+  "show_less": "Show less",
+
+  "favorite_books": "Favorite books",
+  "no_books": "No books added",
+  "banner_library": "Library",
+  "toast_added_favorite": "Added to favorites",
+"toast_removed_favorite": "Removed from favorites",
+
+"admission_info_title": "Admission Information",
+"start_journey": "Start Your Academic Journey",
+"tuition_fee": "Tuition Fee",
+"requirements": "Requirements",
+"procedure": "Procedure",
+"academic_calendar": "Academic Calendar",
+
+  "job_posting": "Job Posting",
+  "apply_now": "Apply Now",
+  "description": "Description",
+  "type": "Type",
+  "status": "Status",
+  "deadline": "Deadline",
+
+    "apply_for": "Apply for",
+  "job": "Job",
+  "applicant_name": "Applicant Name",
+  "applicant_email": "Applicant Email",
+  "cv": "CV",
+  "submit": "Submit",
+  "cancel": "Cancel",
+
+  "loading_college_data": "Loading College Data...",
+    "colleges": "Colleges",
+  "college": "College",
+  "colleges_intro": "Explore the university's colleges and select a college to learn more about its academic programs and faculty members.",
+
+
+  "business_management": "Business Management",
+  
+  "information_engineering": "Information Engineering",
+
+   "staff": "Staff",
+  "our_staff": "Our Staff",
+  "staff_subtitle": "Meet our academic and professional team members.",
+  "staff_description": "Meet our academic and professional faculty members, professors, and administrative team.",
+  "department": "Department",
+  "not_available": "Not Available",
+
+  
+  "academic_departments": "Academic Departments",
+  "search_department": "Search for a department or college...",
+  "loading_departments": "Loading departments data...",
+  "view_details": "View Details",
+  "no_search_results": "No results match your search...",
+  "study_duration": "Study Duration",
+  "close": "Close",
+  "academic_departments_title": "Academic Departments | Aljazeera Private University",
+  "academic_departments_description": "Explore the academic departments available at our university, from engineering and pharmacy to management and information technology.",
+
+    "academic_departments_keywords": "Pharmacy, Civil Engineering, Architectural Engineering, Information Engineering, Management",
+
+     "four_years": "4 Years",
+  "five_years": "5 Years",
+
+      "title": "Academic Programs",
+    "search": "Search for a program...",
+    "all": "All",
+    "bachelor": "Bachelor",
+    "master": "Master",
+    "study_plan": "Study Plan",
+    "no_results": "No programs match the current search criteria...",
+     "search_academic_programs": "Search academic programs",
+
+         "title_program": "Academic Programs & Degrees | Aljazeera Private University",
+    "description-program": "Explore academic programs and degrees available for bachelor and master students and learn about study plans for all majors.",
+    "keywords": "academic programs, bachelor, master, university majors, study plan, Aljazeera Private University",
+
+      "site_name": "Aljazeera Private University",
+  "search_for": "Search for",
+  "advertisements_page_title": "Advertisements",
+  "advertisements_page_desc": "Browse the latest published advertisements",
+  "search_results_for": "Search results for",
+  "in_advertisements": "in advertisements",
+  "advertisements_banner_title": "Advertisements",
+  "search_placeholder": "Search for an advertisement...",
+  "no_advertisements_found": "No advertisements found",
+
+    "read_more": "Read More ",
+
+  "events": "Events",
+  "events_description": "Discover up-to-date campus events, news, and academic activities.",
+  "search_events_placeholder": "Search events...",
+  "news": "News",
+
+
+  "articles_page_title": "Articles",
+  "articles_page_desc": "Browse the latest published articles and research.",
+  "in_articles": "in articles",
+  "articles_banner_title": "Articles",
+  "search_articles_placeholder": "Search articles...",
+
+  "dir": "ltr",
+  "apply_now": "Apply Now",
+  "student_name": "Student Name",
+  "placeholder_name": "Enter full name",
+  "email": "Email Address",
+  "national_id": "National ID / Identity",
+  "pattern_title_numbers_only": "Please enter numbers only",
+  "status": "Status",
+  "status_active": "Active",
+  "status_inactive": "Inactive",
+  "save_data": "Save Data",
+  "cancel": "Cancel",
+  "alert_success_message": "Data saved successfully!",
+  "console_submit_message": "Submitted Data:",
+  "dir": "ltr",
+  "apply_for": "Apply for",
+  "job": "Job",
+  "applicant_name": "Applicant Name",
+  "applicant_name_placeholder": "Enter your full name",
+  "applicant_email": "Email Address",
+  "applicant_email_placeholder": "example@email.com",
+  "submit": "Submit Application",
+  "cancel": "Cancel",
+  "sending": "Sending...",
+  "fill_all_fields_error": "Please fill in all fields and upload your CV.",
+  "submit_success_message": "Your application has been submitted successfully!",
+  "submit_error_message": "Something went wrong while sending data.",
+  "submission_failed": "Submission failed",
+
+    "description": "Complete the form below and upload the required file.",
+    "student": "Student Name",
+    "student_placeholder": "Enter student name",
+    "program": "Program",
+    "program_placeholder": "Enter program name",
+    "file": "Application File",
+    "file_help": "Accepted formats: PDF, DOC, DOCX",
+    "submit": "Submit Application",
+    "latest_advertisements_desc": "Stay updated with the latest articles, news, and activities.",
+    "Application submitted successfully":"Application submitted successfully",
+    "Failed to submit application":"Failed to submit application",
+      "academic_faculties": "Academic Faculties",
+  "academic_faculties_subtitle": "Click \"View Details\" to see requirements and fees for each faculty.",
+  "selected": "Selected",
+  "view_details": "View Details",
+  "close_details": "Close Details",
+  "requirements": "Requirements",
+  "application_procedure": "Application Procedure",
+  "tuition_fees": "Tuition Fees",
+  "academic_calendar": "Academic Calendar",
+  "usd_annually": "USD / Annually",
+  "apply": "Apply",
+  "select_faculty_message": "Please select a faculty from above to display its specific admission details, requirements and fees.",
+  "program_not_found": "Program not found or not selected correctly",
+   "search_staff": "Search staff...",
+"view_all":"View All"
+
+
+
+
+
+}

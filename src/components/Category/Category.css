@@ -1,0 +1,54 @@
+@import "tailwindcss";
+  .category-bg {
+    @apply bg-[var(--color-light-main)] rounded-lg relative z-5 p-8
+  }
+  
+  
+  
+  .category-text h2 {
+    @apply text-[36px] text-white px-[50px];
+  }
+  
+  .single-category {
+    @apply py-5 rounded-md block  w-[150px] h-[200px] bg-[#ffc600];
+  }
+  
+  .single-category .icon {
+    @apply inline-block text-[var(--color-light-main)];
+  }
+  
+  .single-category .cont {
+    @apply block  
+  }
+  
+  .single-category .cont span {
+    @apply  text-lg pt-[15px] font-bold max-xl:text-[12px] max-xl:font-[700]  text-[var(--color-light-main)];;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .category-slider {
+    @apply relative;
+  }
+  
+     .bg-color-1 {
+    background-color: #4886ff;
+  }
+  
+  .bg-color-2 {
+    background-color: #b5d56a
+  }
+  
+  .bg-color-3 {
+    background-color: #ff6f6f;
+  }
+   .bg-color-4 {
+   @apply bg-[#ffc600];
+  }
+.bg-color-5 {
+   @apply bg-[#00aaff];
+  }
+  
+  .z-5 {
+    z-index: 5;
+  }
+

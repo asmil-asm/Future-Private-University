@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+.student-guide{
+    @apply bg-gray-100 p-6
+
+}
+.student-guide h1{
+    @apply text-center text-2xl mt-9 mb-2 text-[#182F5A] font-bold
+}
+.studenguide-title{
+    @apply text-gray-600 mb-4 text-[18px]
+}
+.studentguide-list{
+    @apply mt-4 text-gray-600 list-disc pr-5 p-7 text-[18px]
+}
+.studentguide-button{
+    @apply mt-6 bg-[#182F5A] text-white px-4 py-2 rounded-lg hover:bg-[#ffc600] transition
+}

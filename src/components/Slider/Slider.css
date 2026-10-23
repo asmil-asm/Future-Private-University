@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.slider-active {
+    position: relative;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+}
+
+.single-slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100% !important;
+}
+
+.slider-cont h1 {
+    font-family: 'Montserrat', sans-serif;
+    @apply text-[28px] sm:text-[38px] md:text-[50px] lg:text-[60px] font-bold text-white leading-tight pb-[15px] md:pb-[25px] p-2;
+}
+
+.slider-cont p {
+    @apply text-[14px] sm:text-[16px] md:text-[18px] text-white/90 font-medium pb-[30px] md:pb-[40px] leading-relaxed p-2;
+    unicode-bidi: plaintext;
+}
+
+.slider-cont ul li {
+    @apply inline-block;
+}

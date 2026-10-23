@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.collegePharmacy-page{
+    @apply bg-gray-100 p-6 md:p-12;
+}
+.collegePharmacy-page h1{
+    @apply text-center font-bold text-[#182F5A] text-2xl mb-5;
+}
+.college-descrition h2{
+    @apply text-[#182F5A] text-lg font-semibold mb-1;
+}
+.college-descrition .collegePharmacy-title{
+    @apply text-gray-700 text-[16px] p-2;
+}
+
+.pharmacy-girde {
+    @apply flex flex-wrap justify-center items-center gap-6 mt-9;
+}
+
+.pharmacy-girde img {
+    @apply w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] h-72 object-cover rounded-xl shadow-md transform transition duration-300 hover:scale-105;
+}
+
+.pharmacy-girde img:only-child {
+    @apply max-w-2xl mx-auto h-80;
+}
+
+.pharmacy-goals h2{
+    @apply text-[#182F5A] text-lg font-semibold mb-7 mt-9;
+}
+.goals-list {
+    @apply list-disc list-inside text-gray-700 space-y-2;
+}
+.pharmacy-btn{
+    @apply text-center mt-9;
+}
+.return{
+    @apply bg-[#182F5A] text-white px-4 py-2 rounded hover:bg-[#ffc600] transition m-3;
+}
+
+

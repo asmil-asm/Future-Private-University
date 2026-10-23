@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.complaintSuggestions{
+    @apply relative flex items-center justify-center min-h-[300px] mt-9;
+    background-image: url('../../assets/ComplaintsSuggestions.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.complaint-overlay{
+    @apply absolute inset-0 bg-black/50;
+}
+.complaint-content{
+    @apply relative z-10 max-w-3xl w-full px-10 py-10  rounded-lg 
+}
+.complaint-title{
+     @apply text-white text-xl  mb-8 font-bold
+}
+.form-group{
+    @apply flex flex-col space-y-6 mb-8;
+}
+.complaint-label{
+     @apply text-white text-lg mb-2
+}
+.complaint-input{
+    @apply w-full h-14 px-4 rounded-xl bg-white outline-none mb-2 ;
+}
+.complaint-textarea{
+     @apply w-full p-4 rounded-xl bg-white outline-none resize-none mt-5;
+}
+.send-btn{
+     @apply mt-4 px-8 py-3 bg-[#182F5A] text-white rounded-md hover:bg-[#ffc600] transition duration-300
+}

@@ -1,0 +1,35 @@
+
+@import "tailwindcss";
+
+#page-banner {
+    @apply relative bg-cover bg-center bg-no-repeat;
+}
+
+#page-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(7, 41, 77, 0.8);
+    z-index: 1;
+}
+  .page-banner-cont {
+    @apply relative z-10;
+  }
+  
+  .page-banner-cont h2 {
+    @apply text-[52px] text-white pb-[15px] text-center max-md:text-[40px];
+  }
+  
+  .page-banner-cont .breadcrumb {
+    @apply flex justify-center m-0 p-0 bg-transparent list-none;
+  }
+  
+  .page-banner-cont .breadcrumb .breadcrumb-item {
+    @apply text-[#ffc600] text-[18px] font-semibold mb-[2px] flex items-center;
+  }
+  
+  .page-banner-cont .breadcrumb .breadcrumb-item a {
+    @apply text-white no-underline hover:underline;
+  }
+  
+

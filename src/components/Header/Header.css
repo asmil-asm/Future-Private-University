@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+.header-top {
+    @apply bg-[var(--color-light-main)] py-2.5 hidden md:block;
+}
+
+.header-contactTop ul {
+    @apply space-x-[45px] flex items-center;
+}
+
+.header-contactTop ul li {
+    @apply flex justify-center items-center cursor-pointer gap-x-2
+} 
+
+.header-contactTop ul li span {
+    @apply text-[var(--color-light-text)] text-[15px] font-normal ml-2.5;
+}
+
+.header-opening-time p {
+    @apply text-[var(--color-light-text)] text-[15px] font-normal;
+}
+
+
+.header-logo-support {
+    @apply border-b border-[#cecece] py-3 md:py-4 bg-white;
+}
+
+.header-logo-support .logo {
+    @apply w-[100px] max-md:w-[70px] max-w-full h-auto max-md:px-3
+    ;
+}
+
+.header-logo-support .logo img {
+    @apply w-full h-auto object-contain;
+}
+
+.support-button {
+    @apply flex items-center gap-x-6;
+}
+
+.support-button .support {
+    @apply flex items-center;
+}
+
+.support-button .support .icon {
+    @apply shrink-0 w-[35px] h-[35px] md:w-[40px] md:h-[40px];
+}
+
+.support-button .support .icon img {
+    @apply w-full h-full object-contain max-md:hidden;
+}
+
+.support-button .support .cont {
+    @apply ml-[12px] flex flex-col max-md:hidden;
+}
+
+.support-button .support .cont p {
+    @apply text-[12px] text-[#8a8a8a] leading-[16px];
+}
+
+.support-button .support .cont span {
+    @apply text-[15px] md:text-[18px] text-[var(--color-light-main)] font-bold whitespace-nowrap;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.support-button .button {
+    @apply hidden lg:block; 
+}
+
+@keyframes sticky {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}

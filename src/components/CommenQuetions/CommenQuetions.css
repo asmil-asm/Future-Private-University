@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+.common-question {
+  @apply mt-[100px] p-6 w-full;
+}
+
+.common-question h2 {
+
+  @apply text-3xl text-[#182F5A] font-extrabold mb-8 tracking-tight;
+}
+.common-question .quetion-info {
+  
+  @apply flex flex-col gap-y-4 w-full;
+}
+.common-question .quetion-info .quetion-box {
+  @apply w-full; 
+}
+.common-question .question {
+  @apply flex flex-row items-center border border-slate-100 bg-white rounded-2xl
+         gap-4 p-5 transition-all duration-300 shadow-sm hover:shadow-md hover:border-indigo-100 
+         w-full;
+}
+.common-question .question div:last-of-type {
+  @apply text-lg text-slate-800 font-semibold tracking-wide;
+}
+.common-question .question div:first-of-type {
+  @apply text-lg text-[#182F5A] font-bold cursor-pointer 
+         bg-indigo-50/80 p-2.5 rounded-full flex items-center justify-center 
+         transition-all duration-300 hover:bg-indigo-100 hover:scale-105;
+}
+.common-question .quetion-info .answare {
+  @apply text-slate-600 text-[16px] leading-relaxed mt-2 mb-4 p-5 
+         bg-slate-50/80 rounded-2xl border border-slate-100/50 duration-500 
+         w-full;
+}

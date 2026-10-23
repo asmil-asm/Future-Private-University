@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+.event-website{
+    @apply mt-9
+}
+.new-event{
+    @apply grid grid-cols-1 gap-4 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4
+}
+.news-card{
+   @apply bg-[#eee] rounded-xl  shadow transition hover:shadow-lg cursor-pointer
+}
+.news-card img{
+    @apply h-48 w-full object-cover;
+
+}
+.news-content{
+    @apply p-4
+}
+.news-card p{
+    @apply text-xs text-[#333];
+}
+.news-card h3{
+    @apply mt-2 font-semibold text-[#182F5A];
+}
+.news-badge{
+    @apply absolute top-1 left-1 bg-blue-600 text-white text-xs px-3 py-1 rounded-full;
+
+}
+.news-wepper{
+    @apply relative
+}
+.search-wrapper {
+  @apply max-w-md mx-auto mb-12;
+}
+
+.search-input {
+  @apply w-full px-5 py-3 rounded-full bg-gray-50 border border-gray-200 
+         text-gray-800 placeholder-gray-400 outline-none transition-all duration-300
+         focus:bg-white focus:border-[#182F5A] focus:ring-4 focus:ring-blue-100 shadow-sm;
+}

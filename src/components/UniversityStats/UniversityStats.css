@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+.stats-section {
+    @apply relative grid md:grid-cols-3 gap-6 text-center py-20;
+
+    
+    background-image: url('../../assets/statas.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.stats-section::before {
+    content: '';
+    @apply absolute inset-0 bg-[#182F5A] opacity-70;
+    z-index: 0;
+}
+.stats-card {
+    @apply relative z-10 p-6 rounded-xl flex flex-col items-center transition-all duration-300 hover:scale-105;
+    color: white;
+    background: transparent; 
+}
+.stats-icon {
+    @apply mb-3 text-white;
+}
+
+
+.stats-number {
+    @apply text-4xl font-bold text-white;
+}
+.stats-label {
+    @apply mt-2 font-semibold text-white;
+}

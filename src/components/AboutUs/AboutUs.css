@@ -1,0 +1,32 @@
+
+ @import "tailwindcss";
+
+ .about-us{
+  @apply py-12 md:py-20 px-6 ;
+ }
+ .about-us h1{
+ @apply text-[#182F5A]  text-2xl font-bold  mb-6 text-center
+}
+.about-container{
+ @apply max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-8 md:gap-16 mt-12;
+}
+.section-left{
+  @apply w-full md:w-1/2 ;
+}
+.section-left h3{
+  @apply text-[#182F5A]  text-xl md:text-2xl font-bold  mb-6
+}
+.aboutUs-text{
+@apply text-gray-600  mb-4 line-clamp-8 overflow-hidden leading-6 max-h-[7.5rem]
+}
+.aboutUs-btn{
+  @apply bg-[#ffc600]  text-[#182F5A]  font-semibold py-3 px-7 hover:bg-[#182F5A] hover:text-[#ffc600]
+  rounded-lg duration-300 shadow-md hover:shadow-lg
+}
+.section-right{
+@apply w-full md:w-1/2 flex justify-center
+}
+.section-right img{
+  @apply w-full h-[400px] object-cover rounded-xl
+}
+

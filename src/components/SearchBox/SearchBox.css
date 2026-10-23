@@ -1,0 +1,33 @@
+@import "tailwindcss";
+  .search-box {
+    @apply fixed top-0 left-0 w-full h-full z-[999] transition-all;
+    background-color: rgba(7, 41, 77, 0.5);
+    
+  }
+
+  .closebtn {
+    @apply absolute top-5 right-[50px] cursor-pointer w-[30px] h-[25px];
+  }
+  
+  .closebtn span {
+    @apply w-[30px] h-[2px] bg-white relative block;
+  }
+  
+  .closebtn span:nth-of-type(1) {
+    @apply top-[11px];
+    transform: rotate(45deg);
+  }
+  
+  .closebtn span:nth-of-type(2) {
+    @apply top-[9px];
+    transform: rotate(-45deg);
+  }
+
+  .search-box .serach-form input {
+    @apply w-1/2 h-[50px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white border-2 border-[#07294d] text-[#07294d] px-5 rounded-full max-md:w-3/4
+  }
+
+  .search-box .serach-form button {
+    @apply absolute top-1/2  -translate-x-1/2 -translate-y-1/2 p-0 border-0 bg-transparent text-[#07294d] cursor-pointer text-base;
+  }
+

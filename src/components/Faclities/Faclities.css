@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+.fac-fixed-section {
+    @apply relative w-full bg-cover bg-center mt-[100px] md:mt-[140px] overflow-hidden;
+}
+
+.fac-colleges-dark-column {
+    background-color: rgba(7, 41, 77, 0.94);
+    @apply relative z-10 py-12 px-6 md:px-16 lg:px-24;
+}
+
+.fac-video-popup-trigger {
+    @apply inline-flex items-center justify-center outline-none border-none bg-transparent cursor-pointer p-0 m-0;
+}
+
+.fac-circle-pulse {
+    @apply flex items-center justify-center
+           w-20 h-20 md:w-24 md:h-24
+           rounded-full bg-[#ffc600] 
+           transition-all duration-300 hover:scale-110 shadow-2xl;
+}
+
+.fac-play-icon-svg {
+    @apply text-[#07294d] text-2xl md:text-3xl;
+}
+[dir="ltr"] .fac-play-icon-svg { @apply ml-1 mr-0; }
+[dir="rtl"] .fac-play-icon-svg { @apply mr-1 ml-0; }
+
+.fac-inner-content-wrapper {
+    @apply max-w-[480px] mx-auto lg:mx-0;
+}
+
+.fac-title-header h3 {
+    @apply text-3xl md:text-4xl text-white font-bold pb-6 m-0;
+}
+[dir="ltr"] .fac-title-header { @apply text-left; }
+[dir="rtl"] .fac-title-header { @apply text-right; }
+
+.fac-clean-ul-list {
+    @apply flex flex-col gap-4 p-0 m-0 list-none;
+}
+
+.fac-link-item-card {
+    @apply block w-full no-underline decoration-transparent;
+}
+
+.fac-li-row {
+    @apply flex items-center gap-4 text-white/90 transition-all duration-300 py-3 border-b border-white/10;
+}
+
+[dir="ltr"] .fac-li-row:hover {
+    @apply translate-x-2 text-[#ffc600];
+}
+[dir="rtl"] .fac-li-row:hover {
+    @apply -translate-x-2 text-[#ffc600];
+}
+
+.fac-li-row .fac-icon-box-frame {
+    @apply text-2xl md:text-3xl shrink-0 flex items-center justify-center text-white bg-white/10 p-3 rounded-xl transition-colors duration-300;
+}
+.fac-li-row:hover .fac-icon-box-frame {
+    @apply bg-[#ffc600] text-[#07294d];
+}
+
+.fac-text-box-frame {
+    @apply flex-1;
+}
+
+.fac-li-row .fac-text-box-frame h4 {
+    @apply text-lg md:text-xl font-semibold text-white m-0 p-0 tracking-wide transition-colors duration-300;
+    color: inherit;
+}
+[dir="ltr"] .fac-text-box-frame h4 { @apply text-left; }
+[dir="rtl"] .fac-text-box-frame h4 { @apply text-right; }
+
+.fac-pure-modal {
+    @apply fixed inset-0 z-[9999] flex items-center justify-center p-4 md:p-6;
+}
+
+.fac-modal-overlay {
+    @apply absolute inset-0  bg-black/45 backdrop-blur-md;
+}
+
+.fac-modal-body {
+    @apply relative w-full max-w-[900px] bg-black rounded-xl overflow-visible shadow-2xl;
+}
+
+.fac-modal-close {
+    @apply absolute -top-12 w-10 h-10
+           rounded-full bg-white text-black text-xl cursor-pointer
+           flex items-center justify-center transition-colors hover:bg-[#ffc600] border-none outline-none;
+}
+[dir="ltr"] .fac-modal-close { @apply right-0 lg:-right-12 left-auto; }
+[dir="rtl"] .fac-modal-close { @apply left-0 lg:-left-12 right-auto; }

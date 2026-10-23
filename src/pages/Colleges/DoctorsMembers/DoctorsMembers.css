@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+.factully h2{
+    @apply text-[#182F5A] text-lg font-semibold mb-7 mt-9
+}
+.faculty-card{
+      @apply bg-white rounded-2xl shadow-md p-4 flex flex-col items-center text-center w-full h-full relative;
+}
+.faculty-card .faculty-photo{
+    @apply w-32 h-32 object-cover rounded-full mb-4;
+}
+.faculty-card h3{
+      @apply text-xl font-semibold text-[#182F5A];
+}
+.faculty-card h4{
+      @apply text-[15px] text-gray-400
+}
+.faculty-card .bio {
+    @apply absolute w-full h-full bg-[var(--color-light-main)]/70 top-full left-0 opacity-0 duration-300 text-[18px] text-white transition-all py-3 px-2 rounded-2xl;
+}
+
+.faculty-card:hover .bio {
+    @apply top-0 opacity-100;
+}
+.faculty-title{
+    @apply text-gray-500
+}
+.mySwiper{
+      width: 100%;
+  padding: 10px 0;
+}
+.factully-swiper{
+      display: flex;
+  height: auto !important;
+}

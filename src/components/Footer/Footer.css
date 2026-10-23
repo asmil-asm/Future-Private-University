@@ -1,0 +1,41 @@
+@import "tailwindcss";
+footer{
+    @apply bg-[var(--color-light-main)] mt-[80px]  pt-5 
+}
+
+footer .footer-content{
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    @apply grid items-center gap-10 mx-[100px]
+}
+
+footer .footer-content .text p{
+    @apply text-white mt-1
+}
+footer .footer-content .text .logo{
+    @apply w-[100px]
+}
+footer .footer-content .text .social{
+    @apply flex items-center justify-center
+    mt-8 gap-x-8 text-xl
+}
+footer .footer-content .text .social .icon{
+    @apply text-white hover:text-[var(--color-hover-text)] cursor-pointer
+
+}
+footer .footer-content .links .list {
+    @apply flex flex-col 
+}
+.list li{
+    @apply text-white text-[18px] font-[400] flex items-center hover:text-[var(--color-hover-text)]
+    hover:translate-x-3 duration-500
+    mt-4 gap-x-4 cursor-pointer
+}
+footer .footer-content  .info h3{
+    @apply text-white
+}
+footer .footer-bottom{
+    @apply py-3 bg-[#021D3A] text-center  w-full mt-[30px]
+}
+footer .footer-bottom p{
+    @apply text-white font-bold text-xl
+}

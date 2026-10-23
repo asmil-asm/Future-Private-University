@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Container */
+.event-details {
+  @apply max-w-5xl mx-auto px-4 py-8 md:py-12;
+}
+
+/* Image */
+.event-details img {
+  @apply w-full h-[220px] sm:h-[300px] md:h-[420px]
+  object-cover rounded-xl shadow-lg;
+}
+
+/* Body card */
+.event-body {
+  @apply bg-white shadow-md rounded-xl p-5 sm:p-8 md:p-10 mt-6;
+}
+
+/* Title */
+.event-title {
+  @apply text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-snug;
+}
+
+/* Date */
+.event-date {
+  @apply text-sm sm:text-base text-gray-500 mt-3;
+}
+
+/* Divider */
+.event-divider {
+  @apply w-full h-px bg-gray-200 my-5;
+}
+
+/* Content */
+.event-content {
+  @apply text-base sm:text-lg leading-7 sm:leading-8 text-gray-700 whitespace-pre-line;
+}
+
+/* Button */
+.event-btn {
+  @apply mt-8 px-6 py-3 bg-[#182F5A] text-white rounded-lg font-semibold
+  transition duration-300 hover:bg-[#ffc600] hover:-translate-y-1 hover:shadow-lg
+  w-full sm:w-auto;
+}

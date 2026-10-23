@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+.articles-details {
+  @apply mx-auto px-4 py-8 md:py-12 max-w-5xl;
+}
+
+.articles-details img {
+  @apply w-full h-[220px] sm:h-[300px] md:h-[400px] lg:h-[450px]
+  object-cover rounded-xl md:rounded-2xl shadow-lg;
+}
+
+.articles-body {
+  @apply p-4 sm:p-6 md:p-10;
+}
+
+.articles-details .detail-title {
+  @apply text-2xl sm:text-3xl md:text-4xl font-bold mt-6 md:mt-8 mb-3 md:mb-4 text-gray-900;
+}
+
+.details-text {
+  @apply text-xs sm:text-sm text-gray-500 mb-4 md:mb-6;
+}
+
+.details-sub {
+  @apply text-base sm:text-lg leading-7 md:leading-8 text-gray-700 whitespace-pre-line;
+}
+
+.details-btn {
+  @apply mt-6 px-5 py-3 sm:px-6 sm:py-3
+  bg-[#182F5A] text-white rounded-lg font-semibold
+  transition duration-300
+  hover:bg-[#ffc600] hover:-translate-y-1 hover:shadow-lg
+  text-sm sm:text-base;
+}

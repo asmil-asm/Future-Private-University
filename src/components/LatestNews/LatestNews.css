@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+.latestnews {
+    @apply p-6 my-[100px] w-full overflow-hidden;
+}
+
+.latestnews h1 {
+    @apply text-center text-2xl font-bold mb-6 text-[#182F5A];
+}
+
+.latestnews-title {
+    @apply text-center text-[18px] text-gray-600 mb-8;
+}
+
+/* ضبط السوايبير لمنع الفراغات */
+.latestnews .swiper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.latestnews .swiper-slide {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: inherit; 
+    @apply bg-white rounded-xl shadow-md overflow-hidden transition hover:shadow-xl cursor-pointer;
+}
+
+.news-img {
+    @apply w-full h-48 object-cover;
+}
+
+.news-info {
+    @apply p-4 flex-grow;
+}
+
+.news-date {
+    @apply text-sm text-gray-500 mb-2;
+}
+
+.news-title {
+    @apply text-[18px] font-semibold mb-2 line-clamp-1;
+}
+
+.news-content {
+    @apply text-sm text-gray-600 line-clamp-2;
+}
+
+.latest-btn {
+    @apply mt-8 mx-auto block px-6 py-3 bg-[#182F5A] text-white font-semibold rounded-full shadow-md transition-all duration-300 ease-in-out;
+}
+
+.latest-btn:hover {
+    @apply bg-[#ffc600];
+}

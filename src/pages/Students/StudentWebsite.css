@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.student{
+    @apply bg-gray-100 p-6
+}
+
+.student-gride{
+  @apply grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-2
+}
+.card-clickable{
+    @apply bg-white shadow-lg rounded-xl p-6 flex flex-col items-center gap-2 cursor-pointer  transition duration-300
+}
+.card-clickable:hover{
+    @apply border border-[#182F5A] 
+}
+.student .icon{
+     @apply text-4xl text-[#182F5A] mb-2;
+}
+.card-title {
+  @apply font-bold text-gray-600;
+}
+.card{
+    @apply bg-white shadow-lg rounded-xl p-6 flex flex-col items-center gap-2 cursor-pointer  transition 
+}
+

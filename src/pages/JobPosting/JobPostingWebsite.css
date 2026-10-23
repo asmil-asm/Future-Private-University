@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+.jobPosting {
+    @apply bg-gray-100 px-4 py-12;
+}
+
+.job-gride {
+    @apply grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.job-card {
+    @apply bg-white rounded-2xl shadow-lg p-10 border
+           flex flex-col h-full;
+}
+
+.job-card h2 {
+    @apply text-3xl max-md:text-2xl font-semibold text-[var(--color-light-main)] mb-1;
+}
+
+.job-card h3 {
+    @apply text-xl font-medium text-[var(--color-light-main)];
+}
+
+.job-unversity {
+    @apply text-gray-600 mb-2;
+}
+
+.job-type-status,
+.job-deadline {
+    @apply text-gray-700 text-sm mb-2;
+}
+
+.job-section {
+    @apply mt-3;
+}
+
+.job-section h3 {
+    @apply text-[18px] font-semibold text-gray-800 mb-1;
+}
+
+.job-description,
+.job-requirements {
+    @apply text-gray-700 text-sm;
+}
+
+.job-requirements {
+    @apply mb-10
+}
+
+.apply-btn {
+    @apply mt-auto w-full bg-[var(--color-light-main)] hover:bg-[var(--color-hover-text)]
+           text-white py-2.5 rounded-lg font-semibold transition;
+}
