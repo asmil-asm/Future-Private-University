@@ -4,10 +4,11 @@ import Banner from '../../components/Banner/Banner';
 import image1 from '../../assets/about/about1.jpg'; 
 import image2 from '../../assets/about/about2.jpg'
 import image3 from '../../assets/about/about3.jpg'; 
-import './AboutUniversity.css';
 import { apiEndpoint } from '../../services/apiEndpoint';
 import { useGetData } from '../../hooks/useGetData';
 import TransitionPage from '../../components/Transition/TransitionPage';
+import './AboutUniversity.css';
+
 
 const AboutUniversity = () => { 
     const { t, i18n } = useTranslation();  

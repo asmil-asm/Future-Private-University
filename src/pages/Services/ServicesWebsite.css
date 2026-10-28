@@ -27,3 +27,12 @@
 .census .census-info{
     @apply text-[18px] mb-2
 }
+.service-card {
+    @apply border-t-[4px] border-transparent
+  
+}
+
+.service-card:hover {
+    @apply bg-[var(--main-color)] -translate-y-[4px]
+ 
+}
