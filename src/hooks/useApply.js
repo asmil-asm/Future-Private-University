@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 import axios from 'axios';
 import { useActions } from '../store/useActions';
 export const useApply=(onSuccessCallback)=>{
-     const baseUrl="http://127.0.0.1:8000/api/v1/admissions/applications/"
+     const baseUrl="https://university-management-system-607v.onrender.com/api/v1/admissions/applications/"
          const {t}=useTranslation()
      const { setApply, selectedProgram} = useActions();
     const mutations = useMutation({

@@ -9,7 +9,7 @@ export const useJob = (onSuccessCallback, job) => {
     const { setSelectedJob } = useActions();
     
     
-    const baseUrl = 'http://127.0.0.1:8000/api/v1/careers/applications/';
+    const baseUrl = 'https://university-management-system-607v.onrender.com/api/v1/careers/applications/';
     
     const mutations = useMutation({
         mutationFn: async (formData) => {

@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import toast from 'react-hot-toast';
 import axios from 'axios'
 export const useMessage=(onSuccessCallback)=>{
-    const basUrl='http://127.0.0.1:8000/api/v1/core/contact/'
+    const basUrl='https://university-management-system-607v.onrender.com/api/v1/core/contact/'
     const {t}=useTranslation()
 const mutations=useMutation({
     mutationFn:async(formData)=>{
