@@ -1,12 +1,13 @@
 import { useTranslation } from 'react-i18next'; 
 import image from '../../assets/vision/imageVision.jpg';
-import './vision.css';
 import Banner from '../../components/Banner/Banner';
 import TransitionPage from '../../components/Transition/TransitionPage';
 import { Helmet } from 'react-helmet-async';
 import { useGetData } from '../../hooks/useGetData';
 import { apiEndpoint } from '../../services/apiEndpoint';
 import Loading from '../../components/Loading/Loading'
+import './Vision.css';
+
 
 const Vision = () => {
     const { t, i18n } = useTranslation(); 
