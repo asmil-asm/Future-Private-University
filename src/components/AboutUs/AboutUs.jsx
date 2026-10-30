@@ -13,7 +13,8 @@ endpoint:apiEndpoint.pages
     })
     if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error loading data</div>;
-    const page=data.find((item)=>item.slug?.includes('about-us'))
+    const pages=Array.isArray(data) ? data :[]
+    const page=pages?.find((item)=>item.slug?.includes('about-us'))
     const lang = i18n.language === 'ar' ? 'ar' : 'en';
 const pageDesc=lang ==='ar'? page.content_ar : page.content_en
     return (

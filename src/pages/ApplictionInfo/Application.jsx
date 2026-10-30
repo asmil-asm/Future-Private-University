@@ -10,10 +10,11 @@ import Loading from '../../components/Loading/Loading'
 import { useActions } from '../../store/useActions';
 export default function Application() {
   const { t, i18n } = useTranslation();
-const {data=[],isLoading}=useGetData({
+const {data,isLoading}=useGetData({
   key:'admissions',
   endpoint:apiEndpoint.admissions
 })
+const admissions=Array.isArray(data)?data:[]
   
 const {  setApply,applyForm,setSelectedProgram}=useActions()
   const [selectedCollege, setSelectedCollege] = useState(null);
@@ -30,7 +31,7 @@ const {  setApply,applyForm,setSelectedProgram}=useActions()
   if (name.includes('network') || name.includes('شبك') || name.includes('information') || name.includes('معلومات')) return '🌐';
   if (name.includes('anatomy') || name.includes('تشريح') || name.includes('physiolog') || name.includes('فيزيولوج')) return '🧬';
   if (name.includes('arabic') || name.includes('عربي')) return '📖';
-  return '🎓'; // ✅ افتراضي
+  return '🎓'; 
 };
 
   const handleSelect = (college) => {
@@ -77,7 +78,7 @@ const {  setApply,applyForm,setSelectedProgram}=useActions()
           </div>
 
           <div className="faculties-grid">
-            {data.results?.map((item) => {
+            {admissions.results?.map((item) => {
               const nameEn = item?.program_details?.name_en || "";
               const nameAr = item?.program_details?.name_ar || "";
               const displayName = item?.program_details?.[`name_${lang}`] || nameEn || "No Name Available";

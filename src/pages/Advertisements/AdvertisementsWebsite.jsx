@@ -12,10 +12,11 @@ const AdvertisementsWebsite = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const { i18n, t } = useTranslation();
 
- const {data=[]}=useGetData({
+ const {data}=useGetData({
   key:'advertisements',
   endpoint:apiEndpoint.advertisements
  })
+ const advertisements=Array.isArray(data)?data:[]
 
   const lang = i18n.language === 'ar' ? 'ar' : 'en';
 
@@ -28,7 +29,7 @@ const AdvertisementsWebsite = () => {
     ? `${t('search_results_for')} "${searchTerm}" ${t('in_advertisements')}`
     : t('advertisements_page_desc');
  const filtered = searchTerm
-  ? data?.filter((item) => {
+  ? advertisements?.filter((item) => {
       const term = searchTerm.toLowerCase();
 
       const title = item.title_ar || item.title_en;

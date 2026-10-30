@@ -11,26 +11,25 @@ import Loading from '../../components/Loading/Loading';
 
 const EventsWebsite = () => {
     const navigate = useNavigate();
-  const {data=[],isLoading}=useGetData({
+  const {data,isLoading}=useGetData({
 key:'events',
 endpoint:apiEndpoint.events
   })
       const [searchTrem, setSearchTrem] = useState('');
     const { t, i18n } = useTranslation();
-
-    const filtered=searchTrem ? data?.filter((item)=>{
+const events=Array.isArray(data)?data:[]
+    const filtered=searchTrem ? events?.filter((item)=>{
     const term=searchTrem.toLowerCase()
       const title = item.title_ar || item.title_en;
     return (typeof title === 'string' && title.toLowerCase().includes(term))
-  }):data
+  }):events
 
     const lang = i18n.language === 'ar' ? 'ar' : 'en';
     const siteName = t("site_name");
     const pageTitle = `${t("events") || "Events"} | ${siteName}`;
     const pageDesc = t("events_description") || "Discover up-to-date campus events, news, and academic activities.";
     
-    // Grab fallback thumbnail from the first event if available
-    const fallbackImage = data?.events?.[0]?.image || '';
+    const fallbackImage = events?.events?.[0]?.image || '';
 if(isLoading) return <Loading/>
     return (
         <>

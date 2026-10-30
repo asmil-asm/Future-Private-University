@@ -13,10 +13,11 @@ import './LatestArticles.css';
 const LatestArticles = () => {
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
-  const {data=[]}=useGetData({
+  const {data}=useGetData({
         key:'articles',
         endpoint:apiEndpoint.articles
     })
+    const lastArticles=Array.isArray(data)?data:[]
   
     return (
         <section className="latestarticles slider-active">
@@ -31,8 +32,8 @@ const LatestArticles = () => {
                 modules={[Navigation, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={3}
-                centeredSlides={data.length < 3}
-                loop={data.length > 3}
+                centeredSlides={lastArticles.length < 3}
+                loop={lastArticles.length >= 8}
                 autoplay={{ delay: 5000, disableOnInteraction: false }}
                 navigation={true}
                 breakpoints={{
@@ -42,7 +43,7 @@ const LatestArticles = () => {
                 }}
                 className="mySwiper"
             >
-                {data.map((article) => (
+                {lastArticles.map((article) => (
                     <SwiperSlide key={article.id} style={{ height: 'auto', display: 'flex', justifyContent: 'center' }}>
                         <div 
                             className="lastesArticles-card" 

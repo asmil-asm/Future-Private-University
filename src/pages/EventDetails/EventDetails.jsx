@@ -10,7 +10,7 @@ const EventDetails = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
-  const {data=[]}=useGetData({
+  const {data}=useGetData({
         key:['eventsDetails',id],
         endpoint:apiEndpoint.eventData(id)
     })

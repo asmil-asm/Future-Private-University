@@ -13,13 +13,13 @@ const Faclities = () => {
     const [showVideo, setShowVideo] = useState(false);
     const { t, i18n } = useTranslation();
     const isRtl = i18n.dir() === 'rtl';
-        const {data=[]}=useGetData({
+        const {data}=useGetData({
             key:'collages',
             endpoint:apiEndpoint.colleges
     
         })
         
-
+const colleges=Array.isArray(data)? data :[]
 
     
 
@@ -78,7 +78,7 @@ const Faclities = () => {
                             </div>
                             
                             <ul className="fac-clean-ul-list flex flex-col gap-y-3">
-                                {data.map((item) => (
+                                {colleges.map((item) => (
                                     <li key={item.id}>
                                         <Link 
                                             className="fac-link-item-card block no-underline group" 

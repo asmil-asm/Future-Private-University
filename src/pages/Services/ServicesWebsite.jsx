@@ -17,7 +17,7 @@ const ServicesWebsite = () => {
     const siteName = t("site_name");
     const pageTitle = `${t('services') || "Services"} | ${siteName}`;
     const pageDesc = t("services_description") || "Explore the student facilities, campus services, and academic activities provided at our university.";
-
+const services=Array.isArray(data)?data:[]
     return (
         <>
             <Helmet>
@@ -42,7 +42,7 @@ const ServicesWebsite = () => {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {data?.map((ser, index) => {
+                        {services?.map((ser, index) => {
                             const serviceName = lang === 'ar' ? (ser?.name_ar || ser?.name_en) : ser?.name_en;
                             const serviceDesc = lang === 'ar' ? (ser?.description_ar || ser?.description_en) : (ser?.description_en || ser?.description_ar);
                             

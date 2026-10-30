@@ -9,12 +9,13 @@ import Loading from '../../components/Loading/Loading'
 import './Articles.css';
 
 const Articles = () => {
-  const {data=[],isLoading}=useGetData({
+  const {data,isLoading}=useGetData({
 key:'articles',
 endpoint:apiEndpoint.articles
   })
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
+  const articles=Array.isArray(data)? data:[]
   
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -29,7 +30,7 @@ endpoint:apiEndpoint.articles
   const dynamicDescription = searchTerm
     ? `${t('search_results_for')} "${searchTerm}" ${t('in_articles')}`
     : t('articles_page_desc');
-  const filtered=searchTerm ? data?.filter((item)=>{
+  const filtered=searchTerm ?articles?.filter((item)=>{
     const term=searchTerm.toLowerCase()
       const title = item.title_ar || item.title_en;
     return (typeof title === 'string' && title.toLowerCase().includes(term))

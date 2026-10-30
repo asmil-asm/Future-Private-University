@@ -10,12 +10,13 @@ import Loading from '../../components/Loading/Loading';
 import './Colleges.css';
 const CollegesWebsite = () => {
     const { t, i18n } = useTranslation();
-const {data=[],isLoading}=useGetData({
+const {data,isLoading}=useGetData({
     key:"colleges",
     endpoint:apiEndpoint.colleges
 })
     const lang = i18n.language === 'ar' ? 'ar' : 'en';
     const siteName = t("site_name");
+    const colleges=Array.isArray(data)?data:[]
     const pageTitle = `${t("colleges")} | ${siteName}`;
     const pageDesc = t("colleges_intro");
 if(isLoading) return <Loading/>
@@ -38,7 +39,7 @@ if(isLoading) return <Loading/>
                     <p className='college-into'>{t("colleges_intro")}</p>
                 </div>
                 <div className='college-gride'>
-  {data.map((item) => (
+  {colleges.map((item) => (
     <Link key={item.id} to={`/academics/colleges/${item.id}`}>
       <div className="college-card">
         <div className="college-icon">

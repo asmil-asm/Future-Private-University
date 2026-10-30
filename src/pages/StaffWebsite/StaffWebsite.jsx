@@ -23,15 +23,17 @@ const StaffWebsite = () => {
 
   const allowedDepartments = location.state?.departmentIds || null;
 
-  const { data: departments = [], isLoading: deptLoading } = useGetData({
+  const { data: departments, isLoading: deptLoading } = useGetData({
     key: 'departments',
     endpoint: apiEndpoint.departments,
   });
 
-  const { data: staff = [], isLoading: staffLoading } = useGetData({
+  const { data: staffs , isLoading: staffLoading } = useGetData({
     key: 'staff',
     endpoint: apiEndpoint.staff,
   });
+const departmente=Array.isArray(departments)?departments:[]
+const staff=Array.isArray(staffs)?staffs:[]
 
  
 
@@ -89,7 +91,7 @@ const StaffWebsite = () => {
                   onChange={(e) => setSelectedDepartment(e.target.value)}
                 >
                   <option value="">{t("all_departments")}</option>
-                  {departments?.map((dept) => (
+                  {departmente?.map((dept) => (
                     <option key={dept.id} value={dept.id}>
                       {lang === "ar" ? dept.name_ar || dept.name_en : dept.name_en}
                     </option>

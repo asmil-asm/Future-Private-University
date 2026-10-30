@@ -4,7 +4,6 @@ import { QueryClientProvider } from '@tanstack/react-query'
 import { queryClient } from './lib/queryClient.js'
 import { HelmetProvider } from 'react-helmet-async'; 
 import './index.css'
-import './css/font-awesome.min.css'
 import './Translation/i18n.jsx'
 createRoot(document.getElementById('root')).render(
           <HelmetProvider>

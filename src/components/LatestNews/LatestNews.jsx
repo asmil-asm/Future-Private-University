@@ -12,14 +12,13 @@ import "swiper/css/navigation";
 const LatestNews = () => {
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
-    const {data=[]}=useGetData({
+    const {data}=useGetData({
         key:'events',
         endpoint:apiEndpoint.events
     })
     
     const lang = i18n.language === 'ar' ? 'ar' : 'en';
-
-    if (!data) return null;
+const lastsNews=Array.isArray(data)?data:[]
 
     return (
         <section className="slider-active latestnews">
@@ -34,8 +33,8 @@ const LatestNews = () => {
                 modules={[Navigation, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={3}
-                centeredSlides={data.length < 3}
-                loop={data.length > 3}
+                centeredSlides={lastsNews.length < 3}
+                loop={lastsNews.length >= 8}
                 autoplay={{ delay: 5000, disableOnInteraction: false }}
                 navigation={true} 
                 breakpoints={{
@@ -44,7 +43,7 @@ const LatestNews = () => {
                     1024: { slidesPerView: 3, spaceBetween: 30 },
                 }}
             >
-                {data.map((news, index) => (
+                {lastsNews.map((news, index) => (
                     <SwiperSlide key={index}>
                         <div className="news-card" onClick={() => navigate(`/news/events/${news.id}`)}>
                             <img src={news.image} alt={news[`title_${lang}`]} className="news-img" />

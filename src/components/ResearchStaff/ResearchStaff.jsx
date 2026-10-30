@@ -7,19 +7,19 @@ import './ResearchStaff.css';
 
 const ResearchStaff = () => {
   const { selectedResearch, setSelectedResearch, selectedStaff, setSelectedStaff } = useActions();
-  const { data = [], isLoading } = useGetData({
+  const { data, isLoading } = useGetData({
     key: 'research',
     endpoint: apiEndpoint.research
   });
   const { t, i18n } = useTranslation();
-
+const research=Array.isArray(data)?data:[]
   const lang = i18n.language === 'ar' ? 'ar' : 'en';
 
   if (!selectedStaff) {
     return <div className="profile-container">{lang === 'ar' ? 'جاري تحميل بيانات الموظف...' : 'Loading staff data...'}</div>;
   }
 
-  const staffResearches = data?.filter(
+  const staffResearches = research?.filter(
     (res) => String(res.staff) === String(selectedStaff.id) || res.author_name === selectedStaff.currentName
   ) || [];
 

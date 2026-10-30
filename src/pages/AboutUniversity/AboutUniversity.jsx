@@ -17,12 +17,12 @@ key:'pages',
 endpoint:apiEndpoint.pages
     })
     
-   
 
     const lang = i18n.language === 'ar' ? 'ar' : 'en';
 if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error loading data</div>;
-const page=data?.find((item)=>item.slug?.includes('about-us'))
+    const pages=Array.isArray(data)? data:[]
+const page=pages?.find((item)=>item.slug?.includes('about-us'))
 
     const pageTitle =  lang === 'ar' ? page?.title_ar: page?.title_en
 

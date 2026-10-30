@@ -17,11 +17,11 @@ import Loading from '../../components/Loading/Loading'
 const LibraryWebsite = () => {
   const { t, i18n } = useTranslation();
   const isRtl = i18n.dir() === 'rtl';
-const {data=[],isLoading}=useGetData({
+const {data,isLoading}=useGetData({
   key:'libraries',
 endpoint:apiEndpoint.libraries
 })
-  
+  const libraries=Array.isArray(data)?data:[]
 
   const [expanded, setExpanded] = useState(false);
   const [favorite, setFavorite] = useState([]);
@@ -51,7 +51,7 @@ endpoint:apiEndpoint.libraries
     window.open(bookUrl, '_blank', 'noopener,noreferrer');
   };
 
-const filteredBooks = (data || []).filter((item) => {
+const filteredBooks = libraries.filter((item) => {
   const q = search.trim().toLowerCase();
   if (!q) return true; 
 

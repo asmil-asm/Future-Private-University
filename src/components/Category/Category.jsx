@@ -9,13 +9,14 @@ import { FaGraduationCap } from "react-icons/fa";
 import './Category.css'; 
 import 'swiper/css/navigation';
 import 'swiper/css';
-import 'swiper/css/autoplay';
 const Category = () => {
-    const {data=[]}=useGetData({
+    const {data}=useGetData({
         key:'collages',
         endpoint:apiEndpoint.colleges
 
     })
+      const colleges = Array.isArray(data) ? data : [];
+
     const { t, i18n } = useTranslation();
     const isRtl = i18n.dir() === 'rtl';
     return (
@@ -47,7 +48,7 @@ const Category = () => {
                                     spaceBetween={20}
                                     navigation
                                     autoplay={{ delay: 4000, disableOnInteraction: false }}
-                                    loop={data.length > 3}
+                  loop={colleges.length >= 8}
                                     breakpoints={{
                                         400: {
                                             slidesPerView: 1,
@@ -68,7 +69,7 @@ const Category = () => {
                                     }}
                                     className="mySwiper py-4"
                                 >
-                                    {data.map((item) => (
+                                    {colleges.map((item) => (
                                         <SwiperSlide key={item.id} className='text-center'>
                                             <Link 
                                                 to={item.id ? `/academics/colleges/${item.id}` : item.path}

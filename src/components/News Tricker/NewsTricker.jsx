@@ -6,18 +6,17 @@ import './NewsTricker.css'
 const NewsTicker = () => {
   const { i18n } = useTranslation();
   const lang = i18n.language === 'ar' ? 'ar' : 'en';
-  const {data=[]}=useGetData({
+  const {data}=useGetData({
 key:'advertisements',
 endpoint:apiEndpoint.advertisements
   })
-  
 
   const [isSticky, setIsSticky] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
 
   const timeoutRef = useRef(null);
 
-  const advertisements = useMemo(() => data || [], [data]);
+  const advertisements = useMemo(() =>Array.isArray(data)?data:[], [data]);
 
   useEffect(() => {
     const handleScroll = () => {

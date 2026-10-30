@@ -14,15 +14,15 @@ const ProgramWebsite = () => {
     const [filterLevel, setFilterLevel] = useState("all");
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
-    const {data=[],isLoading}=useGetData({
+    const {data,isLoading}=useGetData({
         key:'programs',
         endpoint:apiEndpoint.programs
     })
 
-   
+   const programs=Array.isArray(data)?data:[]
 
 
-    const filteredPrograms = data.filter(p => {
+    const filteredPrograms = programs.filter(p => {
         const matchesLevel = filterLevel === "all" || p?.level === filterLevel;
         const matchesSearch = 
             (p?.name_ar || "").includes(searchTerm) || 

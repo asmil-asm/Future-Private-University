@@ -10,10 +10,11 @@ import { Helmet } from 'react-helmet-async';
 const JobPostingWebsite = () => {
     const { selectedJob, setSelectedJob ,show,setShow } = useActions();
     const { t, i18n } = useTranslation();
-const {data=[],isLoading}=useGetData({
+const {data,isLoading}=useGetData({
     key:'jobs',
     endpoint:apiEndpoint.jobs
 })
+const jobs=Array.isArray(data)?data:[]
 
     const lang = i18n.language === 'ar' ? 'ar' : 'en';
     const siteName = t("site_name");
@@ -35,7 +36,7 @@ if(isLoading) return <Loading/>
             <Banner title={t("job_posting")} />
             <div className='jobPosting'>
                 <div className='job-gride'>
-                    {data?.filter((item) => {
+                    {jobs?.filter((item) => {
              if (!item.deadline) return true;
               const isOpen =
       item.status === "open" ||

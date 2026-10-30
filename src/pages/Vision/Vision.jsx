@@ -18,8 +18,8 @@ const Vision = () => {
 
 
     const lang = i18n.language === 'ar' ? 'ar' : 'en';
-
-    const page = data.find((p) => p.page_type === 'vision') || {};
+const pages=Array.isArray(data)?data:[]
+    const page = pages?.find((p) => p.page_type === 'vision') || {};
 
     const siteName = t("site_name");
     const pageTitle = `${t('vision_mission_title') || "Vision & Mission"} | ${siteName}`;
