@@ -12,7 +12,7 @@ const ResearchStaff = () => {
     endpoint: apiEndpoint.research
   });
   const { t, i18n } = useTranslation();
-const research=Array.isArray(data)?data:[]
+const research=Array.isArray(data)?data :[]
   const lang = i18n.language === 'ar' ? 'ar' : 'en';
 
   if (!selectedStaff) {
@@ -31,7 +31,16 @@ const research=Array.isArray(data)?data:[]
 
 
   if (isLoading) return <Loading />;
-
+const getSafeUrl = (url) => {
+  if (typeof url !== 'string') return '#';
+  try {
+    const parsed = new URL(url, window.location.origin);
+    if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+      return url;
+    }
+  } catch (error) { console.log(error) }
+  return '#';
+};
   return (
     <div className="profile-container">
    
@@ -116,12 +125,7 @@ const research=Array.isArray(data)?data:[]
           {selectedResearch.link && (
             <div className="research-url-display-box">
               <h3>{lang === 'ar' ? 'رابط البحث:' : 'Research URL:'}</h3>
-              <a 
-                href={selectedResearch.link} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="research-direct-link"
-              >
+             <a href={getSafeUrl(selectedResearch.link)} target="_blank" rel="noopener noreferrer">
                 {selectedResearch.link}
               </a>
             </div>
