@@ -4,7 +4,8 @@ const baseUrl=import.meta.env.VITE_API_BASE_URL
 const getData=async({url,key})=>{
 try {
     const response=await axios.get(`${baseUrl}${url}`)
-    return response.data
+        const data = response.data;
+    return data?.results ?? data;
 } catch (error) {
     console.log(error,key)
     throw error
