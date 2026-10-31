@@ -54,7 +54,7 @@ const services=Array.isArray(data)?data:[]
                                     <div className="absolute top-0 left-0 w-2 h-full bg-[#182F5A] transform -translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
 
                                     <div>
-                                        <div className="flex items-center gap-4 mb-4">
+                                        <div className="flex justify-center items-center gap-4 mb-4">
                                             <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#182F5A] flex items-center justify-center text-xl font-bold group-hover:bg-[#182F5A] group-hover:text-white transition-colors duration-300">
                                                 {index + 1}
                                             </div>
