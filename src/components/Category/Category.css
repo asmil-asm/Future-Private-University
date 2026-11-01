@@ -10,7 +10,7 @@
   }
   
   .single-category {
-    @apply py-5 rounded-md block  w-[150px] h-[200px] bg-[#ffc600];
+    @apply py-5 rounded-md block  w-[150px] h-[230px] bg-[#ffc600];
   }
   
   .single-category .icon {
