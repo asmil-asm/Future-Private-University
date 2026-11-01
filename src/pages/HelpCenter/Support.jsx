@@ -2,55 +2,41 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import "./Style.css"; 
-import axios from "axios";
-import toast from "react-hot-toast";
+import { useMessage } from "../../hooks/useMessage";
 export default function Support() {
   const { t, i18n } = useTranslation();
-  const currentDir = i18n.language === "ar" ? "rtl" : "ltr";
-  const lang = i18n.language === 'ar' ? 'ar' : 'en';
- 
-  const [formData, setFormData] = useState({      sender_name: "",
+    const [formData, setFormData] = useState({     
+       sender_name: "",
         sender_email: "",
         subject: "",
         message: "" });
-    const [loading, setLoading] = useState(false); 
+    const resetForm = () => {
+        setFormData({
+            sender_name: "",
+            sender_email: "",
+            subject: "",
+            message: ""
+        });
+    };
+      const {send,isLoading}=useMessage(resetForm)
+      
+  const currentDir = i18n.language === "ar" ? "rtl" : "ltr";
+  const lang = i18n.language === 'ar' ? 'ar' : 'en';
+ 
 
-   const handleChange = (e) => {
+   const handelChange = (e) => {
         setFormData((prev) => ({
             ...prev,
             [e.target.name]: e.target.value
         }));
     };
+    
 
  
     const handelSubmit = async (e) => {
         e.preventDefault();
-        
-        if (!formData.sender_name.trim() || !formData.sender_email.trim()|| !formData.subject.trim()  || !formData.message.trim()) {
-            toast.error(t('form_required_fields'));
-            return;
-        }
-
-        setLoading(true);
-        try {
-            const res = await axios.post(`http://127.0.0.1:8000/api/v1/core/contact/`, formData); 
-            
-            if (res.status === 201 || res.status === 200) {
-                toast.success(t("form_success"));
-                
-                setFormData({
-                     sender_name: "",
-                    sender_email: "",
-                    subject: "",
-                    message: ""
-                });
-            }
-        } catch (error) {
-            console.error(error);
-            toast.error(t("form_failed"));
-        } finally {
-            setLoading(false);
-        }
+        send(formData)
+       
     };
 
   return (
@@ -89,7 +75,7 @@ export default function Support() {
             type="text"
             name="sender_name"
             value={formData.sender_name}
-            onChange={handleChange}
+            onChange={handelChange}
             className="support-input" 
             placeholder={t("support.name_placeholder")} 
             required
@@ -104,7 +90,7 @@ export default function Support() {
             type="email" 
             name="sender_email"
             value={formData.sender_email}
-            onChange={handleChange}
+            onChange={handelChange}
             className="support-input" 
             placeholder={t("support.email_placeholder")} 
             required
@@ -119,7 +105,7 @@ export default function Support() {
             type="text" 
             name="subject"
             value={formData.subject}
-            onChange={handleChange}
+            onChange={handelChange}
             className="support-input" 
             placeholder={t("support.subject_placeholder")} 
             required
@@ -133,15 +119,15 @@ export default function Support() {
           <textarea 
             name="message"
             value={formData.message}
-            onChange={handleChange}
+            onChange={handelChange}
             className="support-input h-36 resize-none" 
             placeholder={t("support.message_placeholder")} 
             required
           />
         </div>
 
-        <button disabled={loading}  type="submit" className="support-btn">
-        {loading ? t('support.submit_btn_loding') : t('support.submit_btn')}
+        <button disabled={isLoading}  type="submit" className="support-btn">
+        {isLoading ? t('support.submit_btn_loding') : t('support.submit_btn')}
         </button>
       </form>
 
