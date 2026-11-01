@@ -29,7 +29,6 @@ export default function Application() {
   const detailsRef = useRef(null);
   const lang = i18n.language === 'ar' ? 'ar' : 'en';
 
-  // ✅ تحديث dir/lang على <html> بشكل صحيح بدل استخدامه داخل Helmet
   useEffect(() => {
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -112,7 +111,6 @@ export default function Application() {
             </p>
           </div>
 
-          {/* ✅ نستخدم admissions مباشرة بدل admissions.results */}
           {admissions.length > 0 ? (
             <div className="faculties-grid">
               {admissions.map((item) => {
@@ -222,7 +220,6 @@ export default function Application() {
                 </div>
               </div>
 
-              {/* ✅ onClick على الزر نفسه بدل الـ div */}
               <div className="cta-submit-box">
                 <button
                   className="btn-apply-now"
