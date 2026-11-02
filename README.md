@@ -7,7 +7,6 @@
 
 (https://github.com/asmil-asm/University-website/issues)
 
-![Project Preview](./public/preview.png)
 <!-- استبدل الرابط أعلاه بصورة حقيقية للمشروع، مثل ./public/preview.png أو رابط خارجي -->
 
 ---
