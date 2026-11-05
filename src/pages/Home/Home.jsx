@@ -11,17 +11,12 @@ import ComplaintsSuggestions from "../../components/ComplaintsSuggestions/Compla
 import { useActions } from "../../store/useActions"
 import { Helmet } from "react-helmet-async"
 import { useTranslation } from 'react-i18next';
-import { useIsFetching } from "@tanstack/react-query" 
-import Loading from "../../components/Loading/Loading"
 const Home=()=>{
     const {menu}=useActions();
-    const fetchData=useIsFetching()
       const { i18n } = useTranslation();  
     const lang = i18n.language === 'ar' ? 'ar' : 'en';
 const pageTitle=lang === 'ar' ? 'جامعة المستقبل الخاصة' : 'Future Private University';
-if (fetchData > 0) {
-        return <Loading />;
-    }
+
 return (
   <>
   <Helmet>

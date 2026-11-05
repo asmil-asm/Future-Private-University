@@ -5,20 +5,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { useGetData } from '../../hooks/useGetData';
 import { apiEndpoint } from '../../services/apiEndpoint';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 import "swiper/css";
 import "swiper/css/navigation";
 import './LatestArticles.css';
 
-
 const LatestArticles = () => {
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
-  const {data}=useGetData({
-        key:'articles',
-        endpoint:apiEndpoint.articles
-    })
-    const lastArticles=Array.isArray(data)?data:[]
-  
+    
+    const { data, isLoading } = useGetData({
+        key: 'articles',
+        endpoint: apiEndpoint.articles
+    });
+    
+    const lastArticles = Array.isArray(data) ? data : [];
+    const skeletonItems = [1, 2, 3];
+ 
     return (
         <section className="latestarticles slider-active">
             <TransitionWhileInterview dir={'x'} num={-100}>
@@ -32,9 +36,9 @@ const LatestArticles = () => {
                 modules={[Navigation, Autoplay]}
                 spaceBetween={30}
                 slidesPerView={3}
-                centeredSlides={lastArticles.length < 3}
-                loop={lastArticles.length >= 8}
-                autoplay={{ delay: 5000, disableOnInteraction: false }}
+                centeredSlides={!isLoading && lastArticles.length < 3}
+                loop={!isLoading && lastArticles.length >= 8}
+                autoplay={!isLoading ? { delay: 5000, disableOnInteraction: false } : false}
                 navigation={true}
                 breakpoints={{
                     320: { slidesPerView: 1, spaceBetween: 20 },
@@ -43,21 +47,36 @@ const LatestArticles = () => {
                 }}
                 className="mySwiper"
             >
-                {lastArticles.map((article) => (
-                    <SwiperSlide key={article.id} style={{ height: 'auto', display: 'flex', justifyContent: 'center' }}>
-                        <div 
-                            className="lastesArticles-card" 
-                            style={{ height: '100%', display: 'flex', flexDirection: 'column', width: '100%' }} 
-                            onClick={() => navigate(`/news/articles/${article.id}`)}
-                        >
-                            <img src={article.image} alt={article.title_en} className="latestarestarticle-card-img" />
-                            <div style={{ padding: '15px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                                <h2 className="latestarticle-title">{i18n.language === 'ar'?article.title_ar:article.title_en}</h2>
-                                <p className="latestarticle-content" style={{ flexGrow: 1 }}>{i18n.language === 'ar'?article.content_ar:article.content_en}</p>
+                {isLoading ? (
+                    skeletonItems.map((_, index) => (
+                        <SwiperSlide key={`article-skeleton-${index}`} style={{ height: 'auto', display: 'flex', justifyContent: 'center' }}>
+                            <div className="lastesArticles-card bg-white p-4 rounded-xl shadow-sm" style={{ height: '100%', display: 'flex', flexDirection: 'column', width: '100%' }}>
+                                <Skeleton height={180} className="w-full rounded-lg mb-3" />
+                                <div style={{ padding: '15px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                                    <Skeleton height={24} count={2} className="mb-3" />
+                                    <Skeleton height={14} count={4} />
+                                </div>
                             </div>
-                        </div>
-                    </SwiperSlide>
-                ))}
+                        </SwiperSlide>
+                    ))
+                ) : (
+                    // === البيانات الحقيقية ===
+                    lastArticles.map((article) => (
+                        <SwiperSlide key={article.id} style={{ height: 'auto', display: 'flex', justifyContent: 'center' }}>
+                            <div 
+                                className="lastesArticles-card" 
+                                style={{ height: '100%', display: 'flex', flexDirection: 'column', width: '100%' }} 
+                                onClick={() => navigate(`/news/articles/${article.id}`)}
+                            >
+                                <img src={article.image} alt={article.title_en} className="latestarestarticle-card-img" />
+                                <div style={{ padding: '15px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+                                    <h2 className="latestarticle-title">{i18n.language === 'ar'? article.title_ar : article.title_en}</h2>
+                                    <p className="latestarticle-content" style={{ flexGrow: 1 }}>{i18n.language === 'ar'? article.content_ar : article.content_en}</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    ))
+                )}
             </Swiper>
 
             <TransitionWhileInterview dir='x' num={-100}>

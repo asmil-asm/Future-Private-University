@@ -7,21 +7,22 @@ import { useTranslation } from 'react-i18next';
 import { useGetData } from '../../hooks/useGetData';
 import { apiEndpoint } from '../../services/apiEndpoint';
 import { FaGraduationCap } from "react-icons/fa";
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 import './Faclities.css'
 
 const Faclities = () => {
     const [showVideo, setShowVideo] = useState(false);
     const { t, i18n } = useTranslation();
     const isRtl = i18n.dir() === 'rtl';
-        const {data}=useGetData({
-            key:'collages',
-            endpoint:apiEndpoint.colleges
     
-        })
+    const { data, isLoading } = useGetData({
+        key: 'collages',
+        endpoint: apiEndpoint.colleges
+    });
         
-const colleges=Array.isArray(data)? data :[]
-
-    
+    const colleges = Array.isArray(data) ? data : [];
+    const skeletonItems = [1, 2, 3, 4];
 
     return (
         <TransitionWhileInterview dir='x' num={isRtl ? 100 : -100}>
@@ -78,25 +79,38 @@ const colleges=Array.isArray(data)? data :[]
                             </div>
                             
                             <ul className="fac-clean-ul-list flex flex-col gap-y-3">
-                                {colleges.map((item) => (
-                                    <li key={item.id}>
-                                        <Link 
-                                            className="fac-link-item-card block no-underline group" 
-                                            to={typeof item.id === 'number' ? `/academics/colleges/${item.id}` : item.path}
-                                        >
-                                            <div className="fac-li-row flex items-center gap-x-4 p-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-200">
-                                                <div className="fac-icon-box-frame text-2xl text-amber-500 bg-white/5 p-2 rounded-md transition-transform duration-200 group-hover:scale-110">
-                                                    {<FaGraduationCap/>}
-                                                </div>
-                                                <div className="fac-text-box-frame">
-                                                    <h4 className="text-white font-medium text-lg group-hover:text-amber-400 transition-colors">
-                                                        {i18n.language === 'ar'? item.name_ar:item.name_en}
-                                                    </h4>
+                                {isLoading ? (
+                                    skeletonItems.map((_, index) => (
+                                        <li key={`fac-skeleton-${index}`}>
+                                            <div className="fac-li-row flex items-center gap-x-4 p-3 rounded-lg bg-white/5 border border-white/10">
+                                                <Skeleton circle width={40} height={40} />
+                                                <div className="flex-1">
+                                                    <Skeleton height={20} width={`70%`} />
                                                 </div>
                                             </div>
-                                        </Link>
-                                    </li>
-                                ))}
+                                        </li>
+                                    ))
+                                ) : (
+                                    colleges.map((item) => (
+                                        <li key={item.id}>
+                                            <Link 
+                                                className="fac-link-item-card block no-underline group" 
+                                                to={typeof item.id === 'number' ? `/academics/colleges/${item.id}` : item.path}
+                                            >
+                                                <div className="fac-li-row flex items-center gap-x-4 p-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 transition-all duration-200">
+                                                    <div className="fac-icon-box-frame text-2xl text-amber-500 bg-white/5 p-2 rounded-md transition-transform duration-200 group-hover:scale-110">
+                                                        {<FaGraduationCap/>}
+                                                    </div>
+                                                    <div className="fac-text-box-frame">
+                                                        <h4 className="text-white font-medium text-lg group-hover:text-amber-400 transition-colors">
+                                                            {i18n.language === 'ar'? item.name_ar : item.name_en}
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </li>
+                                    ))
+                                )}
                             </ul>
                         </div>
                     </div>
