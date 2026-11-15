@@ -115,11 +115,11 @@ const staff=Array.isArray(staffs)?staffs:[]
                       (d) => String(d.id) === String(item.department)
                     );
                     const currentName =
-                      lang === "ar" ? item.full_name_ar || item.full_name : item.full_name;
+                    item.full_name;
                     const currentTitle =
-                      lang === "ar" ? item.title_ar || item.title : item.title;
+                      lang === "ar" ? item.title_ar :item.title_en;
                     const currentBio =
-                      lang === "ar" ? item.bio_ar || item.bio : item.bio;
+                      lang === "ar" ? item.bio_ar  : item.bio_en;
                     const currentDeptName = matchingDept
                       ? lang === "ar"
                         ? matchingDept.name_ar || matchingDept.name_en
