@@ -5,34 +5,27 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import {useGetData} from '../../hooks/useGetData'
 import {apiEndpoint} from '../../services/apiEndpoint'
+import Loading from '../../components/Loading/Loading'
 const ArticlesDetails = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
-    const {data}=useGetData({
+    const {data,isLoading}=useGetData({
         key:['articleDetails',id],
         endpoint:apiEndpoint.articleData(id)
     })
 
   
 
-    if (!data) {
-        return (
-            <div style={{ padding: "100px 20px", textAlign: "center", fontSize: "18px" }}>
-                <h1>{t("article_not_found") || "Article Not Found"}</h1>
-            </div>
-        );
-    }
+    if(isLoading || !data) return <Loading/>
 
     const lang = i18n.language === 'ar' ? 'ar' : 'en';
     const siteName = t("site_name");
     
-    // Fallback configurations for multi-lingual content structures
-    const articleTitle = lang === 'ar' ? (data.title_ar || data.title_en) : data.title_en;
-    const articleContent = lang === 'ar' ? (data.content_ar || data.content_en) : (data.content_en );
+    const articleTitle = lang === 'ar' ? data.title_ar : data.title_en;
+    const articleContent = lang === 'ar' ? data.content_ar: data.content_en ;
     
     const pageTitle = `${articleTitle} | ${siteName}`;
-    // Generate a clean snippet out of the full text body for SEO meta summaries
     const pageDesc = articleContent?.substring(0, 155) + "...";
 
     return (

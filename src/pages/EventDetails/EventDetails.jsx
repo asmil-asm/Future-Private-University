@@ -4,24 +4,27 @@ import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 import { useGetData } from '../../hooks/useGetData';
 import { apiEndpoint } from '../../services/apiEndpoint';
+import Loading from '../../components/Loading/Loading';
 import './EventDetails.css';
 
 const EventDetails = () => {
-    const { id } = useParams();
+    const {id} = useParams();
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
-  const {data}=useGetData({
+  const {data,isLoading}=useGetData({
         key:['eventsDetails',id],
         endpoint:apiEndpoint.eventData(id)
     })
+    if(isLoading || !data) return <Loading/>
+
 
     const lang = i18n.language === 'ar' ? 'ar' : 'en';
     const siteName = t("site_name") || "University";
 
   
 
-    const eventTitle = lang === 'ar' ? (data.title_ar || data.title_en) : data.title_en;
-    const eventDesc = lang === 'ar' ? (data.description_ar  || data.description_en) : (data.description_en || data.description);
+    const eventTitle = lang === 'ar' ? data.title_ar : data.title_en;
+    const eventDesc = lang === 'ar' ? data.description_ar   : data.description_en ;
     
     const pageTitle = `${eventTitle || t("event_details")} | ${siteName}`;
     const pageDesc = eventDesc ? `${eventDesc.substring(0, 155)}...` : pageTitle;
