@@ -48,6 +48,6 @@
 }
 
 .apply-btn {
-    @apply mt-auto w-full bg-[var(--color-light-main)] hover:bg-[var(--color-hover-text)]
+    @apply mt-auto w-full bg-[var(--color-light-main)] hover:bg-[var(--color-hover-main)]
            text-white py-2.5 rounded-lg font-semibold transition;
 }

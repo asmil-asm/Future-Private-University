@@ -19,14 +19,14 @@ footer .footer-content .text .social{
     mt-8 gap-x-8 text-xl
 }
 footer .footer-content .text .social .icon{
-    @apply text-white hover:text-[var(--color-hover-text)] cursor-pointer
+    @apply text-white hover:text-[var(--color-hover-main)] cursor-pointer
 
 }
 footer .footer-content .links .list {
     @apply flex flex-col 
 }
 .list li{
-    @apply text-white text-[18px] font-[400] flex items-center hover:text-[var(--color-hover-text)]
+    @apply text-white text-[18px] font-[400] flex items-center hover:text-[var(--color-hover-main)]
     hover:translate-x-3 duration-500
     mt-4 gap-x-4 cursor-pointer
 }

@@ -78,7 +78,7 @@
 }
 
 .card-action button {
-    @apply flex-1 py-2 rounded-lg text-xs font-bold border border-gray-200 text-white hover:bg-[var(--color-hover-text)] transition-all
+    @apply flex-1 py-2 rounded-lg text-xs font-bold border border-gray-200 text-white hover:bg-[var(--color-hover-main)] transition-all
     bg-[var(--color-light-main)]
 }
 
