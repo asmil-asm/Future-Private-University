@@ -160,7 +160,7 @@ p {
 .swiper-button-next,
 .swiper-button-prev {
   @apply opacity-0 invisible transition-all duration-300 ease-in-out !text-[var(--color-light-main)] scale-90 w-10 h-10 md:w-12 md:h-12 !rounded-full
-  max-w-full  hover:!text-[var(--color-hover-text)] 
+  max-w-full  hover:!text-[var(--color-hover-main)] 
 }
 
 .swiper-button-next:after,

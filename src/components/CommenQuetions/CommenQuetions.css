@@ -6,7 +6,7 @@
 
 .common-question h2 {
 
-  @apply text-3xl text-[#182F5A] font-extrabold mb-8 tracking-tight;
+  @apply text-3xl text-[var(--color-light-main)] font-extrabold mb-8 tracking-tight;
 }
 .common-question .quetion-info {
   
@@ -24,7 +24,7 @@
   @apply text-lg text-slate-800 font-semibold tracking-wide;
 }
 .common-question .question div:first-of-type {
-  @apply text-lg text-[#182F5A] font-bold cursor-pointer 
+  @apply text-lg text-[var(--color-light-main)] font-bold cursor-pointer 
          bg-indigo-50/80 p-2.5 rounded-full flex items-center justify-center 
          transition-all duration-300 hover:bg-indigo-100 hover:scale-105;
 }
