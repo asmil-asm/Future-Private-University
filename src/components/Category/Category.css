@@ -10,7 +10,7 @@
   }
   
   .single-category {
-    @apply py-5 rounded-md block  w-[150px] h-[230px] bg-[var( --color-hover-main)];
+    @apply py-5 rounded-md block  w-[150px] h-[230px] bg-[var(--color-hover-main)];
   }
   
   .single-category .icon {
@@ -42,7 +42,7 @@
     background-color: #ff6f6f;
   }
    .bg-color-4 {
-   @apply bg-[var( --color-hover-main)];
+   @apply bg-[var(--color-hover-main)];
   }
 .bg-color-5 {
    @apply bg-[#00aaff];

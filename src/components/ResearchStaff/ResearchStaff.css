@@ -43,7 +43,6 @@
     @apply text-lg font-bold text-[var(--color-light-main)];
 }
 
-/* قائمة كروت الأبحاث */
 .research-list {
     @apply flex flex-col gap-4;
 }
@@ -101,7 +100,6 @@
     @apply text-gray-700 text-sm leading-relaxed whitespace-pre-line;
 }
 
-/* صندوق عرض الرابط المباشر الجديد */
 .research-url-display-box {
     @apply bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex flex-col md:flex-row gap-2 items-start md:items-center;
 }

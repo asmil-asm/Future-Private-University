@@ -38,7 +38,7 @@
 }
 
 .btn-view-details {
-    @apply w-full py-2 bg-[var( --color-hover-main)] hover:bg-[var(--color-light-main)] hover:text-white text-[var(--color-light-main)] rounded-lg text-xs font-bold transition-all mt-auto;
+    @apply w-full py-2 bg-[var(--color-hover-main)] hover:bg-[var(--color-light-main)] hover:text-white text-[var(--color-light-main)] rounded-lg text-xs font-bold transition-all mt-auto;
 }
 
 .btn-selected {

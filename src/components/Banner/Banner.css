@@ -25,7 +25,7 @@
   }
   
   .page-banner-cont .breadcrumb .breadcrumb-item {
-    @apply text-[var( --color-hover-main)] text-[18px] font-semibold mb-[2px] flex items-center;
+    @apply text-[var(--color-hover-main)] text-[18px] font-semibold mb-[2px] flex items-center;
   }
   
   .page-banner-cont .breadcrumb .breadcrumb-item a {
