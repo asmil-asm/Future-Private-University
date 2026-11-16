@@ -29,6 +29,6 @@
   @apply mt-6 px-5 py-3 sm:px-6 sm:py-3
   bg-[var(--color-light-main)] text-white rounded-lg font-semibold
   transition duration-300
-  hover:bg-[var( --color-hover-main)] hover:-translate-y-1 hover:shadow-lg
+  hover:bg-[var(--color-hover-main)] hover:-translate-y-1 hover:shadow-lg
   text-sm sm:text-base;
 }

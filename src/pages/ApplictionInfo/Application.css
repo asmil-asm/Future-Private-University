@@ -26,7 +26,7 @@
 }
 
 .faculty-card-active {
-    @apply border-transparent ring-2 ring-[var( --color-hover-main)] shadow-lg opacity-100;
+    @apply border-transparent ring-2 ring-[var(--color-hover-main)] shadow-lg opacity-100;
 }
 
 .faculty-card-icon {
@@ -82,7 +82,7 @@
 }
 
 .details-title-dot {
-    @apply w-2 h-2 bg-[var( --color-hover-main)] rounded-full;
+    @apply w-2 h-2 bg-[var(--color-hover-main)] rounded-full;
 }
 
 
@@ -91,7 +91,7 @@
 }
 
 .requirements-item-marker {
-    @apply marker:text-[var( --color-hover-main)];
+    @apply marker:text-[var(--color-hover-main)];
 }
 
 .procedures-timeline {
@@ -99,7 +99,7 @@
 }
 
 .step-number-badge {
-    @apply static inline-flex sm:absolute sm:-left-[35px] top-0 bg-[var( --color-hover-main)] text-white text-xs font-bold rounded-full w-5 h-5 items-center justify-center mb-1 sm:mb-0;
+    @apply static inline-flex sm:absolute sm:-left-[35px] top-0 bg-[var(--color-hover-main)] text-white text-xs font-bold rounded-full w-5 h-5 items-center justify-center mb-1 sm:mb-0;
 }
 
 .step-title {
@@ -115,7 +115,7 @@
 }
 
 .fees-amount {
-    @apply block text-3xl sm:text-4xl font-black text-[var( --color-hover-main)] tracking-tight;
+    @apply block text-3xl sm:text-4xl font-black text-[var(--color-hover-main)] tracking-tight;
 }
 
 .fees-currency {
@@ -147,5 +147,5 @@
 }
 
 .btn-apply-now {
-    @apply w-full sm:w-auto px-12 py-3 bg-[var( --color-hover-main)] hover:bg-[var(--color-light-main)] text-white font-bold rounded-xl shadow-lg transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base;
+    @apply w-full sm:w-auto px-12 py-3 bg-[var(--color-hover-main)] hover:bg-[var(--color-light-main)] text-white font-bold rounded-xl shadow-lg transition-all transform hover:scale-105 active:scale-95 text-sm sm:text-base;
 }

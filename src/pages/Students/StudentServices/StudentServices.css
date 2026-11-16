@@ -20,5 +20,5 @@
     @apply font-semibold text-[var(--color-light-main)] mr-1
 }
 .service-button{
- @apply bg-[var(--color-light-main)] text-white px-6 py-2 rounded-lg hover:bg-[var( --color-hover-main)]  transition
+ @apply bg-[var(--color-light-main)] text-white px-6 py-2 rounded-lg hover:bg-[var(--color-hover-main)]  transition
 }

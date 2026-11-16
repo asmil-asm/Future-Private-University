@@ -27,7 +27,7 @@
 }
 
 .btn-primary {
-    @apply bg-[var(--color-light-main)] text-white px-4 py-2 rounded-md hover:bg-[var( --color-hover-main)] w-full sm:w-auto;
+    @apply bg-[var(--color-light-main)] text-white px-4 py-2 rounded-md hover:bg-[var(--color-hover-main)] w-full sm:w-auto;
 }
 
 .btn-secondary {

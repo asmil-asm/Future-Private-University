@@ -39,6 +39,6 @@
 /* Button */
 .event-btn {
   @apply mt-8 px-6 py-3 bg-[var(--color-light-main)] text-white rounded-lg font-semibold
-  transition duration-300 hover:bg-[var( --color-hover-main)] hover:-translate-y-1 hover:shadow-lg
+  transition duration-300 hover:bg-[var(--color-hover-main)] hover:-translate-y-1 hover:shadow-lg
   w-full sm:w-auto;
 }

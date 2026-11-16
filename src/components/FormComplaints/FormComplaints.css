@@ -25,6 +25,6 @@
 
 .send-btn{
     @apply w-full md:w-auto px-6 py-3 bg-[var(--color-light-main)] text-white font-medium mt-4
-           rounded-lg hover:bg-[var( --color-hover-main)]
+           rounded-lg hover:bg-[var(--color-hover-main)]
            transition duration-200;
         }

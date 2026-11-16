@@ -35,7 +35,7 @@
     @apply text-center mt-9;
 }
 .return{
-    @apply bg-[var(--color-light-main)] text-white px-4 py-2 rounded hover:bg-[var( --color-hover-main)] transition m-3;
+    @apply bg-[var(--color-light-main)] text-white px-4 py-2 rounded hover:bg-[var(--color-hover-main)] transition m-3;
 }
 
 
