@@ -6,7 +6,7 @@
 }
 
 .main-title {
-  @apply text-4xl font-extrabold text-[#182F5A] text-center mb-8;
+  @apply text-4xl font-extrabold text-[var(--color-light-main)] text-center mb-8;
 }
 
 .search-section {
@@ -108,7 +108,7 @@
 }
 
 .box-title {
-  @apply flex items-center gap-1 text-[#182F5A] font-bold mb-3
+  @apply flex items-center gap-1 text-[var(--color-light-main)] font-bold mb-3
          text-sm border-b border-blue-100 pb-2;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .modal-header {
-  @apply bg-[#182F5A] p-10 text-center text-white;
+  @apply bg-[var(--color-light-main)] p-10 text-center text-white;
 }
 
 .modal-icon {
@@ -156,6 +156,6 @@
 }
 
 .btn-primary {
-  @apply bg-[#182F5A] text-white px-8 py-3 rounded-xl font-bold
+  @apply bg-[var(--color-light-main)] text-white px-8 py-3 rounded-xl font-bold
          hover:bg-blue-900 transition-all;
 }

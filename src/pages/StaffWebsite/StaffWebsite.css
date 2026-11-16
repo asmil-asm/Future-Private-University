@@ -58,5 +58,5 @@
 }
 
 .details-btn{
-    @apply text-white bg-[var(--color-light-main)] rounded-xl p-3
+    @apply text-white bg-[var(--color-light-main)] rounded-xl p-3 hover:bg-[var( --color-hover-main)]
 }

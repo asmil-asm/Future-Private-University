@@ -214,7 +214,7 @@ button {
   --color-dark-ground: #1B2431;
   --color-dark-second: #495463a9;
   --color-light-second: #EEEE;
-  --color-hover-text: #ffc600;
+  --color-hover-main: #ffc600;
 }
 
 @tailwind utilities;

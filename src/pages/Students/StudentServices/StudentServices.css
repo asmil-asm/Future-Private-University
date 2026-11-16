@@ -4,21 +4,21 @@
     @apply bg-gray-100 p-6
 }
 .student-service h1{
-    @apply text-center text-2xl text-[#182F5A] font-bold mb-6
+    @apply text-center text-2xl text-[var(--color-light-main)] font-bold mb-6
 }
 .service-title{
     @apply mb-3 text-gray-600 text-[18px] 
 
 }
 .availabel-title{
-    @apply text-xl mb-3 font-bold p-3 text-[#182F5A] 
+    @apply text-xl mb-3 font-bold p-3 text-[var(--color-light-main)] 
 }
 .servise-list{
     @apply list-decimal pr-6 p-5
 }
 .servise-list span{
-    @apply font-semibold text-[#182F5A] mr-1
+    @apply font-semibold text-[var(--color-light-main)] mr-1
 }
 .service-button{
- @apply bg-[#182F5A] text-white px-6 py-2 rounded-lg hover:bg-[#ffc600]  transition
+ @apply bg-[var(--color-light-main)] text-white px-6 py-2 rounded-lg hover:bg-[var( --color-hover-main)]  transition
 }

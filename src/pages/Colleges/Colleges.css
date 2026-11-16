@@ -59,7 +59,7 @@
          w-20 h-20 sm:w-24 sm:h-24
          rounded-full
          text-4xl sm:text-5xl
-         text-[var(--color-light-main)] bg-[#182F5A]/5
+         text-[var(--color-light-main)] bg-[var(--color-light-main)]/5
          transition-all duration-300;
 }
 

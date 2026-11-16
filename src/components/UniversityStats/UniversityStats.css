@@ -11,7 +11,7 @@
 }
 .stats-section::before {
     content: '';
-    @apply absolute inset-0 bg-[#182F5A] opacity-70;
+    @apply absolute inset-0 bg-[var(--color-light-main)] opacity-70;
     z-index: 0;
 }
 .stats-card {

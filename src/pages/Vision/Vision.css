@@ -11,7 +11,7 @@
     @apply  inset-0 w-[90%] h-full mt-9 rounded-xl ;
   }
   .vision-content h1{
-    @apply text-2xl text-center mb-5 font-bold text-[#182F5A];
+    @apply text-2xl text-center mb-5 font-bold text-[var(--color-light-main)];
   }
   .vision-content p{
     @apply text-[18px] text-center

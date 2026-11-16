@@ -7,16 +7,16 @@
      @apply mb-5;
 }
 .form-label{
-     @apply block mb-2 text-sm font-medium text-[#182F5A];
+     @apply block mb-2 text-sm font-medium text-[var(--color-light-main)];
 }
 .form-input{
        @apply w-full px-4 py-3 border border-gray-300 rounded-lg mt-3 mb-3
-           focus:outline-none  focus:border-[#182F5A]
+           focus:outline-none  focus:border-[var(--color-light-main)]
            transition duration-200;
 }
 .form-textarea{
        @apply w-full px-4 py-3 border border-gray-300 rounded-lg
-           focus:outline-none  focus:border-[#182F5A]
+           focus:outline-none  focus:border-[var(--color-light-main)]
            resize-none min-h-[140px]
            transition duration-200;
 }
@@ -24,7 +24,7 @@
 
 
 .send-btn{
-    @apply w-full md:w-auto px-6 py-3 bg-[#182F5A] text-white font-medium mt-4
-           rounded-lg hover:bg-[#ffc600]
+    @apply w-full md:w-auto px-6 py-3 bg-[var(--color-light-main)] text-white font-medium mt-4
+           rounded-lg hover:bg-[var( --color-hover-main)]
            transition duration-200;
         }

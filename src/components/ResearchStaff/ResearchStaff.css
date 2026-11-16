@@ -12,7 +12,7 @@
     @apply flex-1 md:border-l md:border-gray-200 md:pl-6;
 }
 .profile-bio-summary h3 {
-    @apply text-lg font-bold text-[#182F5A] mb-2;
+    @apply text-lg font-bold text-[var(--color-light-main)] mb-2;
 }
 .profile-bio-summary p {
     @apply text-gray-600 text-sm leading-relaxed;
@@ -21,7 +21,7 @@
     @apply flex flex-col items-center min-w-[220px];
 }
 .profile-large-avatar {
-    @apply w-28 h-28 rounded-full bg-[#182F5A] text-white text-4xl font-bold flex items-center justify-center mb-3 shadow-md;
+    @apply w-28 h-28 rounded-full bg-[var(--color-light-main)] text-white text-4xl font-bold flex items-center justify-center mb-3 shadow-md;
 }
 .profile-main-info h2 {
     @apply text-xl font-bold text-gray-800;
@@ -40,7 +40,7 @@
     @apply mt-8 mb-4 border-b pb-2;
 }
 .research-section-title h3 {
-    @apply text-lg font-bold text-[#182F5A];
+    @apply text-lg font-bold text-[var(--color-light-main)];
 }
 
 /* قائمة كروت الأبحاث */
@@ -72,8 +72,8 @@
     @apply text-[11px] text-gray-400 block;
 }
 .view-research-btn {
-    @apply border border-[#182F5A] text-[#182F5A] text-xs px-3 py-1.5 
-    rounded-lg font-medium transition-all hover:bg-[#182F5A] hover:text-white shrink-0;
+    @apply border border-[var(--color-light-main)] text-[var(--color-light-main)] text-xs px-3 py-1.5 
+    rounded-lg font-medium transition-all hover:bg-[var(--color-light-main)] hover:text-white shrink-0;
 }
 
 .research-detail-view {
@@ -83,13 +83,13 @@
     @apply flex flex-wrap justify-between items-center gap-2 mb-4 border-b pb-3 border-gray-200;
 }
 .research-detail-badge {
-    @apply bg-[#182F5A] text-white text-xs px-3 py-1 rounded-full font-medium;
+    @apply bg-[var(--color-light-main)] text-white text-xs px-3 py-1 rounded-full font-medium;
 }
 .research-detail-date {
     @apply text-sm text-gray-500 font-medium;
 }
 .research-detail-title {
-    @apply text-xl md:text-2xl font-bold text-[#182F5A] mb-6 leading-snug;
+    @apply text-xl md:text-2xl font-bold text-[var(--color-light-main)] mb-6 leading-snug;
 }
 .research-detail-abstract-box {
     @apply bg-white p-5 rounded-lg border border-gray-100 shadow-sm mb-6;
@@ -109,7 +109,7 @@
     @apply text-sm font-bold text-gray-700 shrink-0 m-0;
 }
 .research-direct-link {
-    @apply text-[#182F5A] hover:underline text-sm font-medium break-all;
+    @apply text-[var(--color-light-main)] hover:underline text-sm font-medium break-all;
 }
 
 .animate-fade-in {

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .factully h2{
-    @apply text-[#182F5A] text-lg font-semibold mb-7 mt-9
+    @apply text-[var(--color-light-main)] text-lg font-semibold mb-7 mt-9
 }
 .faculty-card{
       @apply bg-white rounded-2xl shadow-md p-4 flex flex-col items-center text-center w-full h-full relative;
@@ -10,7 +10,7 @@
     @apply w-32 h-32 object-cover rounded-full mb-4;
 }
 .faculty-card h3{
-      @apply text-xl font-semibold text-[#182F5A];
+      @apply text-xl font-semibold text-[var(--color-light-main)];
 }
 .faculty-card h4{
       @apply text-[15px] text-gray-400

@@ -17,7 +17,7 @@
 }
 
 .article-title {
-  @apply text-lg font-bold text-[#182F5A];
+  @apply text-lg font-bold text-[var(--color-light-main)];
 }
 
 .article-meta {
@@ -34,5 +34,5 @@
 .search-input {
   @apply w-full px-5 py-3 rounded-full bg-gray-50 border border-gray-200 
          text-gray-800 placeholder-gray-400 outline-none transition-all duration-300
-         focus:bg-white focus:border-[#182F5A] focus:ring-4 focus:ring-blue-100 shadow-sm;
+         focus:bg-white focus:border-[var(--color-light-main)] focus:ring-4 focus:ring-blue-100 shadow-sm;
 }

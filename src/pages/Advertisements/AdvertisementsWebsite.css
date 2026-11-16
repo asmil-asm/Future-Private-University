@@ -11,7 +11,7 @@
 .search-input {
   @apply w-full px-5 py-3 rounded-full bg-gray-50 border border-gray-200 
          text-gray-800 placeholder-gray-400 outline-none transition-all duration-300
-         focus:bg-white focus:border-[#182F5A] focus:ring-4 focus:ring-blue-100 shadow-sm;
+         focus:bg-white focus:border-[var(--color-light-main)] focus:ring-4 focus:ring-blue-100 shadow-sm;
 }
 
 .advertisements-grid {
@@ -40,7 +40,7 @@
 }
 
 .article-title {
-  @apply text-lg font-bold text-[#182F5A] mb-2 line-clamp-1;
+  @apply text-lg font-bold text-[var(--color-light-main)] mb-2 line-clamp-1;
 }
 
 .article-content {
@@ -48,7 +48,7 @@
 }
 
 .read-more-btn {
-  @apply mt-auto text-left text-sm font-semibold text-[#182F5A] hover:text-blue-600 
+  @apply mt-auto text-left text-sm font-semibold text-[var(--color-light-main)] hover:text-blue-600 
          transition-colors duration-200 flex items-center gap-1 cursor-pointer focus:outline-none;
 }
 

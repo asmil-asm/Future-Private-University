@@ -11,10 +11,10 @@
     @apply bg-white shadow-lg rounded-xl p-6 flex flex-col items-center gap-2 cursor-pointer  transition duration-300
 }
 .card-clickable:hover{
-    @apply border border-[#182F5A] 
+    @apply border border-[var(--color-light-main)] 
 }
 .student .icon{
-     @apply text-4xl text-[#182F5A] mb-2;
+     @apply text-4xl text-[var(--color-light-main)] mb-2;
 }
 .card-title {
   @apply font-bold text-gray-600;

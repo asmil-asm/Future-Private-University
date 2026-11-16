@@ -29,5 +29,5 @@
      @apply w-full p-4 rounded-xl bg-white outline-none resize-none mt-5;
 }
 .send-btn{
-     @apply mt-4 px-8 py-3 bg-[#182F5A] text-white rounded-md hover:bg-[#ffc600] transition duration-300
+     @apply mt-4 px-8 py-3 bg-[var(--color-light-main)] text-white rounded-md hover:bg-[var( --color-hover-main)] transition duration-300
 }
