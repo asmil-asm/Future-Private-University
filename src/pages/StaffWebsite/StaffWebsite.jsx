@@ -34,7 +34,12 @@ const StaffWebsite = () => {
   });
 const departmente=Array.isArray(departments)?departments:[]
 const staff=Array.isArray(staffs)?staffs:[]
-
+const handleTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
  
 
   useEffect(() => {
@@ -154,7 +159,9 @@ const staff=Array.isArray(staffs)?staffs:[]
                             <button
                               className="details-btn"
                               onClick={() =>
-                                setSelectedStaff({
+                               {
+                                handleTop()
+                                 setSelectedStaff({
                                   ...item,
                                   currentName,
                                   currentTitle,
@@ -162,6 +169,7 @@ const staff=Array.isArray(staffs)?staffs:[]
                                   currentDeptName,
                                   currentStaffType,
                                 })
+                               }
                               }
                             >
                               {t('Details')}
